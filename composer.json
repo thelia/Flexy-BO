@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "name": "thelia/flexy-bo",
+  "description": "thelia design system",
+  "license": "LGPL-3.0+",
+  "require": {}
+}
