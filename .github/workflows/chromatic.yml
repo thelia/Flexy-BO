@@ -4,7 +4,7 @@ name: 'Chromatic Publish'
 on:
   push:
     branches:
-      - flexy
+      - develop
 
 # List of jobs
 jobs:
