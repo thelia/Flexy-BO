@@ -4,50 +4,50 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: 'var(--main)',
-        darkMain: 'var(--darkMain)',
-        lightCharbon: 'var(--lightCharbon)',
-        mediumCharbon: 'var(--mediumCharbon)',
-        darkCharbon: 'var(--darkCharbon)',
-        grey: 'var(--grey)',
-        mediumGrey: 'var(--mediumGrey)',
-        lightGrey: 'var(--lightGrey)',
-        lightPearl: 'var(--lightPearl)',
-        mediumPearl: 'var(--mediumPearl)',
-        carot: 'var(--carot)',
-        green: 'var(--green)',
-        blue: 'var(--blue)',
-        error: 'var(--error)',
-        danger: 'var(--danger)',
-        success: 'var(--success)',
-        info: 'var(--info)',
-        darkVermillon: 'var(--darkVermillon)',
-        vermillon: 'var(--vermillon)',
-        lightVermillon: 'var(--lightVermillon)',
-        lighterVermillon: 'var(--lighterVermillon)',
-        greyMedium: 'var(--greyMedium)',
-        pearlMedium: 'var(--pearlMedium)',
-        greyDark: 'var(--greyDark)',
+        vermillon: {
+          light: 'var(--vermillon-light)',
+          lighter: 'var(--vermillon-lighter)',
+          lightest: 'var(--vermillon-lightest)',
+          dark: 'var(--vermillon-dark)'
+        },
+        charcoal: {
+          light: 'var(--charcoal-light)',
+          medium: 'var(--charcoal-medium)',
+          dark: 'var(--charcoal-dark)'
+        },
+        pearl: {
+          light: 'var(--pearl-light)',
+          medium: 'var(--pearl-medium)'
+        },
+        grey: {
+          medium: 'var(--grey-medium)',
+          dark: 'var(--grey-dark)'
+        },
         white: 'var(--white)',
-        red: 'var(--red)',
-        redLight: 'var(--redLight)',
-        backgroundRed: 'var(--backgroundRed)',
-        greenDark: 'var(--greenDark)',
-        greenLight: 'var(--greenLight)',
-        ocre: 'var(--ocre)',
-        mauve: 'var(--mauve)',
+        red: {
+          light: 'var(--red-light)',
+          DEFAULT: 'var(--red)'
+        },
+        'background-red': 'var(--background-red)',
+        green: {
+          light: 'var(--green-light)',
+          dark: 'var(--green-dark)'
+        },
+        wheat: {
+          light: 'var(--wheat-light)',
+          DEFAULT: 'var(--wheat)',
+          dark: 'var(--wheat-dark)'
+        },
+        'ultramarine-blue': {
+          light: 'var(--ultramarine-blue-light)',
+          dark: 'var(--ultramarine-blue-dark)'
+        },
+        'caribbean-green': 'var(--caribbean-green)',
+        purple: 'var(--purple)',
         turquoise: 'var(--turquoise)',
-        electricBlue: 'var(--electricBlue)',
-        ocreLight: 'var(--ocreLight)',
-        mauveLight: 'var(--mauveLight)',
-        turquoiseLight: 'var(--turquoiseLight)',
-        electricBlueLight: 'var(--electricBlueLight)',
-        backgroundLightVermillon: 'var(--backgroundLightVermillon)',
-        wheatDark: 'var(--wheatDark)',
-        wheat: 'var(--wheat)',
-        wheatLight: 'var(--wheatLight)',
-        ultramarineBlue: 'var(--ultramarineBlue)',
-        ultramarineBlueLight: 'var(--ultramarineBlueLight)'
+        brown: 'var(--brown)',
+        'apple-green': 'var(--green)',
+        pink: 'var(--pink)'
       },
       screens: {
         xs: '320px',

@@ -1,48 +1,41 @@
 :root {
-  --main: #ec6351;
-  --darkMain: #e25441;
-  --lightCharbon: #444444;
-  --mediumCharbon: #333333;
-  --darkCharbon: #222222;
-  --grey: #707070;
-  --mediumGrey: #a7a7a7;
-  --lightGrey: #ebebeb;
-  --lightPearl: #f7f7f7;
-  --mediumPearl: #f5f5f5;
-  --carot: #fc9722;
-  --green: #73ce6f;
-  --blue: #1e9ae8;
-  --error: #d10000;
-  --danger: #fde2e2;
-  --success: #d1fae5;
-  --info: #e6f1fa;
-  --darkVermillon: #c4311c;
-  --vermillon: #dc3018;
-  --lightVermillon: #fa533c;
-  --lighterVermillon: #ff8f80;
-  --greyMedium: #9b9b9b;
-  --pearlMedium: #ebebeb;
-  --greyDark: #787878;
+  --vermillon-light: #fa533c;
+  --vermillon-lighter: #ff8f80;
+  --vermillon-lightest: #ffeaf8;
+  --vermillon-dark: #c4311c;
+
+  --charcoal-light: #444444;
+  --charcoal-medium: #333333;
+  --charcoal-dark: #222222;
+
+  --pearl-light: #f5f5f5;
+  --pearl-medium: #ebebeb;
+
+  --grey-medium: #9b9b9b;
+  --grey-dark: #787878;
+
   --white: #ffffff;
+
+  --red-light: #ed5656;
   --red: #d21919;
-  --redLight: #ed5656;
-  --backgroundRed: #ffeded;
-  --greenDark: #008958;
-  --greenLight: #ebfff8;
-  --ocre: #9e6700;
-  --mauve: #8c5383;
-  --turquoise: #0e7c7b;
-  --electricBlue: #3423a6;
-  --ocreLight: #fefaf1;
-  --mauveLight: #ebe2ea;
-  --turquoiseLight: #ecf8f8;
-  --electricBlueLight: #eeecff;
-  --backgroundLightVermillon: #f7eeed;
-  --wheatDark: #edac30;
+  --background-red: #ffeded;
+
+  --green-light: #eafbf5;
+  --green-dark: #008958;
+
+  --wheat-light: #fff4de;
   --wheat: #ffdd9c;
-  --wheatLight: #ffecc8;
-  --ultramarineBlue: #3162df;
-  --ultramarineBlueLight: #ecf6ff;
+  --wheat-dark: #ffab0c;
+
+  --ultramarine-blue-light: #ecf6ff;
+  --ultramarine-blue-dark: #3162df;
+
+  --caribbean-green: #00d4a1;
+  --purple: #5f0ab5;
+  --turquoise: #0fc8d3;
+  --brown: #820000;
+  --apple-green: #57c032;
+  --pink: #d800df;
 
   --font-weight-h1: 800;
   --font-weight-h2: 700;

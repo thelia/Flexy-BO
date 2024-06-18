@@ -1,0 +1,24 @@
+{
+  "vermillon": [
+    "bg-vermillon-light",
+    "bg-vermillon-lighter",
+    "bg-vermillon-lightest",
+    "bg-vermillon-dark"
+  ],
+  "charcoal": ["bg-charcoal-light", "bg-charcoal-medium", "bg-charcoal-dark"],
+  "pearl": ["bg-pearl-light", "bg-pearl-medium"],
+  "grey": ["bg-grey-medium", "bg-grey-dark"],
+  "white": ["bg-white"],
+  "red": ["bg-red-light", "bg-red", "bg-background-red"],
+  "green": ["bg-green-light", "bg-green-dark"],
+  "wheat": ["bg-wheat-light", "bg-wheat", "bg-wheat-dark"],
+  "ultramarine-blue": ["bg-ultramarine-blue-light", "bg-ultramarine-blue-dark"],
+  "caribbean-green": ["bg-caribbean-green"],
+  "others": [
+    "bg-purple",
+    "bg-turquoise",
+    "bg-brown",
+    "bg-apple-green",
+    "bg-pink"
+  ]
+}
