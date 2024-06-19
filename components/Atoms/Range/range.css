@@ -3,7 +3,7 @@ input[type='range'].Range {
   -webkit-appearance: none;
 }
 
-input[type='range'].Range.slider-progress {
+input[type='range'].Range {
   --range: calc(var(--max) - var(--min));
   --ratio: calc((var(--value) - var(--min)) / var(--range));
   --sx: calc(0.5 * 15px + var(--ratio) * (100% - 15px));
@@ -30,7 +30,7 @@ input[type='range'].Range::-webkit-slider-runnable-track {
   background: #d6d6d6;
 }
 
-input[type='range'].Range.slider-progress::-webkit-slider-runnable-track {
+input[type='range'].Range::-webkit-slider-runnable-track {
   background:
     linear-gradient(#fa533c, #fa533c) 0 / var(--sx) 100% no-repeat,
     #d6d6d6;
@@ -52,7 +52,7 @@ input[type='range'].Range::-moz-range-track {
   box-shadow: none;
 }
 
-input[type='range'].Range.slider-progress::-moz-range-track {
+input[type='range'].Range::-moz-range-track {
   background:
     linear-gradient(#fa533c, #fa533c) 0 / var(--sx) 100% no-repeat,
     #d6d6d6;
@@ -86,7 +86,7 @@ input[type='range'].Range::-ms-track {
   box-sizing: border-box;
 }
 
-input[type='range'].Range.slider-progress::-ms-fill-lower {
+input[type='range'].Range::-ms-fill-lower {
   height: 3px;
   border-radius: 5px 0 0 5px;
   margin: -undefined 0 -undefined -undefined;
