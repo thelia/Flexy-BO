@@ -1,0 +1,25 @@
+.Button {
+  @apply font-medium;
+
+  &--primary {
+    @apply bg-vermillon-light hover:bg-vermillon-light text-gray-200 rounded-lg shadow-lg p-3;
+  }
+
+  &--secondary {
+    @apply bg-transparent hover:bg-vermillon-light border-vermillon-light border-2 text-gray-200 rounded-lg shadow-lg p-3;
+  }
+
+  &--link {
+    @apply text-vermillon-light;
+  }
+
+  &--small {
+    &-primary {
+      @apply bg-vermillon-light hover:bg-vermillon-light p-4 flex items-center justify-center text-gray-200 rounded-full;
+    }
+
+    &-secondary {
+      @apply flex items-center justify-center w-10 h-10 p-4 font-medium rounded-full bg-grey-medium hover:bg-charcoal-medium hover:text-grey-medium text-charcoal-medium;
+    }
+  }
+}

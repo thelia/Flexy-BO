@@ -1,0 +1,19 @@
+{% set tag = tag|default('a') %}
+{% set classes = 'Button' %}
+
+{% if level is defined %}
+    {% set classes = classes ~ ' Button--' ~ level %}
+{% endif %}
+
+{% if class is defined %}
+    {% set classes = classes ~ ' ' ~ class %}
+{% endif %}
+
+<{{ tag }}
+  class="{{ classes }}"
+  {% if href is defined %}href="{{ href }}"{% endif %}
+  {% if target is defined %}target="{{ target }}"{% endif %}
+  {% if type is defined and type == 'submit' %}type="submit"{% endif %}
+>
+  {{ text }}
+</{{ tag }}>
