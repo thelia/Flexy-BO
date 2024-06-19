@@ -3,7 +3,7 @@ name: Create Release
 on:
   push:
     branches:
-      - flexy-bo
+      - main
 
 jobs:
   create-release:
