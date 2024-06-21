@@ -1,0 +1,67 @@
+.Breadcrumb {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem-convert(8px);
+      align-items: center;
+    }
+  
+    &-item {
+      @apply text-xs;
+      color: #424242; /* written in hex because its actually missing from the var file */
+      line-height: 19.07px;
+      display: flex;
+      gap: rem-convert(8px);
+  
+      &--isLink {
+        &::after {
+          content: '/';
+          font-size: rem-convert(10px);
+        }
+      }
+  
+      &-link {
+          outline: none;
+          text-decoration: underline;
+  
+        a&:hover {
+           color: #FF7036; /* written in hex because its actually missing from the var file */
+        }
+  
+        &:focus-visible,
+        &:focus {
+            outline: none;
+            padding: 5px 10px;
+            border-radius: 2px;
+            border: 1px solid #FFE5DB; /* written in hex because its actually missing from the var file */
+        }
+      }
+    }
+  
+    &-compressed {
+      background-color: var(--grey-lightest);
+      width: rem-convert(16px);
+      height: rem-convert(16px);
+      display: inline-flex;
+      justify-content: center;
+      line-height: rem-convert(8px);
+      text-decoration: none;
+      margin-top: rem-convert(2px);
+  
+      &:focus-visible,
+      &:focus {
+            outline: none;
+            padding: 5px 10px;
+            border-radius: 2px;
+            border: 1px solid #FFE5DB; /* written in hex because its actually missing from the var file */
+        }
+  
+      &:hover {
+        color: #FF7036; /* written in hex because its actually missing from the var file */
+      }
+    }
+  
+    .hide {
+      display: none;
+    }
+  }

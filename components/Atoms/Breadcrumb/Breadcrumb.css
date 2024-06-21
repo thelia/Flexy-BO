@@ -11,6 +11,7 @@
       color: var(--black);
       display: flex;
       gap: rem-convert(8px);
+      align-items: center;
   
       &--isLink {
         &::after {
