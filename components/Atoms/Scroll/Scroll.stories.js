@@ -4,4 +4,4 @@ export default {
   title: 'Design System/Atoms/Scroll'
 };
 
-export const pageScroll = () => Scroll();
+export const base = () => Scroll();
