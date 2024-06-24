@@ -1,0 +1,54 @@
+{
+  "Icons": [
+    "close",
+    "trash",
+    "search",
+    "eye",
+    "link",
+    "edit",
+    "check",
+    "action-list",
+    "long-arrow-up",
+    "long-arrow-down",
+    "long-arrow-left",
+    "long-arrow-right",
+    "short-arrow-up",
+    "short-arrow-down",
+    "short-arrow-left",
+    "short-arrow-right",
+    "plus",
+    "minus",
+    "move"
+  ],
+  "Menu": [
+    "catalog",
+    "tools",
+    "pages",
+    "dashboard",
+    "blocks",
+    "design",
+    "info",
+    "clients",
+    "orders",
+    "modules"
+  ],
+  "Configuration": [
+    "config",
+    "product-catalog",
+    "checkout",
+    "delivery",
+    "settings"
+  ],
+  "User Menu": ["logout", "profile"],
+  "Actions": ["copy", "code", "download", "upload", "share", "archive"],
+  "Forms": [
+    "switch",
+    "chevron-down",
+    "chevron-up",
+    "info-tooltip",
+    "warning",
+    "success",
+    "critical"
+  ],
+  "Others": ["money", "statistics"]
+}
