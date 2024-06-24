@@ -46,7 +46,7 @@ module.exports = {
         purple: 'var(--purple)',
         turquoise: 'var(--turquoise)',
         brown: 'var(--brown)',
-        'apple-green': 'var(--green)',
+        'apple-green': 'var(--apple-green)',
         pink: 'var(--pink)'
       },
       screens: {
