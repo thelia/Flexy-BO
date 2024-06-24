@@ -1,0 +1,64 @@
+.Fonts {
+  display: grid;
+  > div {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--grey-lighter);
+    padding: 1rem 0;
+  }
+}
+
+.h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  line-height: var(--line-height-h1);
+}
+
+.h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  line-height: var(--line-height-h2);
+}
+
+.h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3);
+  line-height: var(--line-height-h3);
+}
+
+.h4 {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-h4);
+  line-height: var(--line-height-h4);
+}
+
+.h5 {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-h5);
+  line-height: var(--line-height-h5);
+}
+
+.h6 {
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-h6);
+  line-height: var(--line-height-h6);
+}
+
+.paragraph-1 {
+  font-size: var(--font-size-paragraph-1);
+  line-height: var(--line-height-paragraph-1);
+}
+.paragraph-2 {
+  font-size: var(--font-size-paragraph-2);
+  line-height: var(--line-height-paragraph-2);
+}
+
+.paragraph {
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+}
