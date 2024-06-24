@@ -1,0 +1,50 @@
+{% set classes = '' %}
+{% if error %}
+   {% set classes = classes ~ ' FieldInput--error' %}
+{% endif %}
+{% if success %}
+   {% set classes = classes ~ ' FieldInput--success' %}
+{% endif %}
+{% if size %}
+   {% set classes = classes ~ ' FieldInput--' ~ size %}
+{% endif %}
+{% if button %}
+   {% set classes = classes ~ ' FieldInput--withButton' %}
+{% endif %}
+
+
+<div class='FieldInput{{ classes }}' {% if disabled %}disabled{% endif %}>
+  <div class='FieldInput-header'>
+    <label for='{{ name }}' class='FieldInput-label'>
+      {{ label }}{% if required and label %} *{% endif %}
+    </label>
+    {% if tooltip %}
+        {% include '../../Tooltip/Tooltip.twig' with {tooltip: tooltip, position: 'bottom'} %}
+    {% endif %}
+  </div>
+  <div class='FieldInput-blockInput {% if iconButton and iconButtonLeft %}FieldInput-blockInputIconLeft{% endif %}'>
+    <input
+      class='FieldInput-input{% if unit %} FieldInput-input--unit{% endif %}'
+      type='{{ type|default('text') }}'
+      name='{{ name }}'
+      id='{{ name }}'
+      {% if value %}value='{{ value }}'{% endif %}
+      {% if required %}required{% endif %}
+      {% if placeholder %}placeholder='{{ placeholder }}{% if required and  not label %} *{% endif %}'{% endif %}
+      {% if min %}minlength='{{ min }}'{% endif %}
+      {% if max %}maxlength='{{ max }}'{% endif %}
+    />
+    {% if unit %}<span class="FieldInput-unit">{{ unit }}</span>{% endif %}
+    {% if iconButton %}
+      <div class="FieldInput-button FieldInput-buttonIcon">
+        <button type='submit'>{{ source("/icons/"~ iconButton ~".svg") }}</button>
+      </div>
+    {% endif %}
+    {% if button %}
+      <div class="FieldInput-button">
+        {% include '../../Button/Button.twig' with {text: button, rectangle: true, type: "submit", classes: size == 'small' ? ' Button--small' : ''} %}
+      </div>
+    {% endif %}
+  </div>
+  {% if error %}<span class='FieldInput-error'>{{ error }}</span>{% endif %}
+</div>
