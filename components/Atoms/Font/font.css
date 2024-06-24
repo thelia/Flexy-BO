@@ -26,24 +26,6 @@
   line-height: var(--line-height-h3);
 }
 
-.h4 {
-  font-size: var(--font-size-h4);
-  font-weight: var(--font-weight-h4);
-  line-height: var(--line-height-h4);
-}
-
-.h5 {
-  font-size: var(--font-size-h5);
-  font-weight: var(--font-weight-h5);
-  line-height: var(--line-height-h5);
-}
-
-.h6 {
-  font-size: var(--font-size-h6);
-  font-weight: var(--font-weight-h6);
-  line-height: var(--line-height-h6);
-}
-
 .paragraph-1 {
   font-size: var(--font-size-paragraph-1);
   line-height: var(--line-height-paragraph-1);

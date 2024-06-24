@@ -11,13 +11,16 @@ export const titles = () => Title();
 export const paragraphs = {
   render: (args) => Paragraph(args),
   args: {
-    bold: false,
+    weight: 'font-normal',
     italic: false,
     lineThrough: false
   },
   argTypes: {
-    bold: {
-      control: { type: 'boolean' }
+    weight: {
+      options: ['font-light', 'font-normal', 'font-semibold', 'font-bold'],
+      control: {
+        type: 'select'
+      }
     },
     italic: {
       control: { type: 'boolean' }
