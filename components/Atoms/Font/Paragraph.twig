@@ -1,0 +1,14 @@
+{% set classes = '' %}
+{% if bold %}
+  {% set classes = classes ~ ' font-bold' %}
+{% endif %}
+{% if italic %}
+  {% set classes = classes ~ ' italic' %}
+{% endif %}
+{% if lineThrough %}
+  {% set classes = classes ~ ' line-through' %}
+{% endif %}
+<div class='Fonts'>
+  <div class='paragraph-1 {{ classes }}'>Paragraphe 1 : Portez ce vieux whisky au juge blond qui fume.</div>
+  <div class='paragraph-2 {{ classes }}'>Paragraphe 2 : Portez ce vieux whisky au juge blond qui fume.</div>
+</div>
