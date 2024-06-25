@@ -1,0 +1,12 @@
+.Progress {
+  height: 8px;
+  background-color: var(--vermillon-light);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.Progress-bar {
+  height: 100%;
+  background-color: var(--vermillon);
+  border-radius: 5px;
+}
