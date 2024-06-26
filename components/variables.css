@@ -76,13 +76,14 @@
   --line-height-paragraph-3: rem-convert(22px);
   --line-height-paragraph-4: rem-convert(18px);
 
-  --font-size-button-large: var(--font-size-sm);
-  --font-size-button-medium: var(--font-size-xs);
-  --font-size-button-small: var(--font-size-2xs);
+  --font-size-button-large: rem-convert(14px);
+  --font-size-button-small: rem-convert(12px);
 
-  --font-weight-button-large: 500;
-  --font-weight-button-medium: 500;
-  --font-weight-button-small: 400;
+  --line-height-button-large: rem-convert(19px);
+  --line-height-button-small: rem-convert(16px);
+
+  --font-weight-button-large: 600;
+  --font-weight-button-small: 600;
 
   --font-family-button-large: 'Poppins';
   --font-family-button-medium: 'Poppins';

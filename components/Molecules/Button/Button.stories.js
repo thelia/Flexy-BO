@@ -1,29 +1,35 @@
-import Button from './Button.twig';
+import Compact from './Classic.twig';
 
 export default {
   title: 'Design System/Molecules/Button'
 };
 
-export const base = {
-  render: (args) => Button(args),
-  args: {
-    text: 'Button',
-    level: 'primary',
-    href: '#',
-    target: '_self',
-    type: 'button',
-    tag: 'button'
-  },
+const types = ['primary', 'secondary', 'tertiary', 'destructive'];
+const icons = ['copy', 'eye', 'edit', 'close'];
 
+export const classic = {
+  render: (args) => Compact(args),
+  args: {
+    customText: 'Button',
+    variant: 'primary',
+    icon_left: 'none',
+    icon_right: 'none'
+  },
   argTypes: {
-    text: { control: 'text' },
-    level: {
-      control: 'select',
-      options: ['primary', 'secondary', 'link', 'small']
+    variant: {
+      options: types,
+      control: { type: 'radio' }
     },
-    href: { control: 'text' },
-    target: { control: 'select', options: ['_self', '_blank'] },
-    type: { control: 'select', options: ['button', 'submit', 'reset'] },
-    tag: { control: 'select', options: ['button', 'a'] }
+    icon_left: {
+      options: ['none', ...icons],
+      control: { type: 'radio' }
+    },
+    icon_right: {
+      options: ['none', ...icons],
+      control: { type: 'radio' }
+    },
+    href: {
+      control: { type: 'text' }
+    }
   }
 };
