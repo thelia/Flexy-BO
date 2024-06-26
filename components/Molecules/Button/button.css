@@ -105,6 +105,30 @@
     }
   }
 
+  &--quartenary {
+    background: var(--grey-lightest);
+    color: var(--black);
+
+    &:hover {
+      background: var(--grey-lighter);
+    }
+
+    &:disabled {
+      background: var(--white);
+      color: var(--grey-lighter);
+    }
+
+    &:focus-visible {
+      outline: none;
+      background: var(--vermillon-lightest);
+    }
+
+    &:focus-visible:hover {
+      background: var(--vermillon-lightest);
+      color: var(--grey-dark);
+    }
+  }
+
   &--destructive {
     background: var(--error);
     color: var(--white);

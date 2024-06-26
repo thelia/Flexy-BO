@@ -4,7 +4,7 @@ export default {
   title: 'Design System/Molecules/Button'
 };
 
-const types = ['primary', 'secondary', 'tertiary', 'destructive'];
+const types = ['primary', 'secondary', 'tertiary', 'quartenary', 'destructive'];
 const icons = ['copy', 'eye', 'edit', 'close'];
 
 export const classic = {
