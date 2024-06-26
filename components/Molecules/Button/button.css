@@ -20,10 +20,10 @@
   & > span.icon {
     @apply w-5 h-5;
     &-left {
-      padding-right: rem-convert(6px);
+      margin-right: rem-convert(16px);
     }
     &-right {
-      padding-left: rem-convert(6px);
+      margin-left: rem-convert(16px);
     }
   }
 
