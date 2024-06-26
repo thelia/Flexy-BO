@@ -17,23 +17,36 @@
   cursor: pointer;
   text-decoration: none;
 
-  & > span.icon {
-    @apply w-5 h-5;
-    &-left {
-      margin-right: rem-convert(16px);
-    }
-    &-right {
-      margin-left: rem-convert(16px);
-    }
-  }
-
   &--xl {
     width: 100%;
+
+    & > span.icon {
+      @apply w-5 h-5;
+      &-left {
+        margin-right: rem-convert(16px);
+      }
+      &-right {
+        margin-left: rem-convert(16px);
+      }
+    }
   }
 
   &--large,
   &--xl {
     padding: 16px 24px;
+  }
+
+  &--medium,
+  &--large {
+    & > span.icon {
+      @apply w-5 h-5;
+      &-left {
+        margin-right: rem-convert(8px);
+      }
+      &-right {
+        margin-left: rem-convert(8px);
+      }
+    }
   }
 
   &--medium {
@@ -46,6 +59,16 @@
     font-family: var(--font-family-button-small);
     font-weight: var(--font-weight-button-small);
     line-height: var(--line-height-button-small);
+
+    & > span.icon {
+      @apply w-4 h-4;
+      &-left {
+        margin-right: rem-convert(4px);
+      }
+      &-right {
+        margin-left: rem-convert(4px);
+      }
+    }
   }
 
   &--primary {
