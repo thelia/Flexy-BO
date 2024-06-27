@@ -90,5 +90,13 @@
     "align-right",
     "list-ol",
     "list-ul"
+  ],
+  "Languages": [
+    "french",
+    "english",
+    "spanish",
+    "italian",
+    "portugese",
+    "german"
   ]
 }
