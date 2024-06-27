@@ -80,3 +80,12 @@ a {
   text-transform: uppercase;
   kerning: 5%;
 }
+
+.label,
+.Label {
+  text-transform: uppercase;
+  font-size: rem-convert(10px);
+  letter-spacing: 5%;
+  font-weight: 600;
+  line-height: rem-convert(14px);
+}
