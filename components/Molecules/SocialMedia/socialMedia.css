@@ -1,0 +1,31 @@
+.SocialMedia {
+  display: block;
+  width: rem-convert(64px);
+  height: rem-convert(64px);
+
+  &--black {
+    color: var(--black);
+
+    &:hover {
+      color: var(--grey-dark);
+    }
+
+    &:focus {
+      outline: 2px solid var(--vermillon-medium);
+      border-radius: 8px;
+    }
+  }
+
+  &--white {
+    color: var(--white);
+
+    &:hover {
+      color: var(--vermillon-medium);
+    }
+
+    &:focus {
+      outline: 2px solid var(--vermillon-medium);
+      border-radius: 8px;
+    }
+  }
+}
