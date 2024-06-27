@@ -1,7 +1,5 @@
 .SocialMedia {
   display: block;
-  width: rem-convert(64px);
-  height: rem-convert(64px);
 
   &--black {
     color: var(--black);
