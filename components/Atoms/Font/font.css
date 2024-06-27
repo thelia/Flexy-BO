@@ -30,12 +30,32 @@
   font-size: var(--font-size-paragraph-1);
   line-height: var(--line-height-paragraph-1);
 }
+
 .paragraph-2 {
   font-size: var(--font-size-paragraph-2);
   line-height: var(--line-height-paragraph-2);
 }
 
+.paragraph-3 {
+  font-size: var(--font-size-paragraph-3);
+  line-height: var(--line-height-paragraph-3);
+}
+
+.paragraph-4 {
+  font-size: var(--font-size-paragraph-4);
+  line-height: var(--line-height-paragraph-4);
+}
+
+a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .paragraph {
+  &--light {
+    font-weight: 300;
+  }
+
   &--semibold {
     font-weight: 600;
   }
@@ -43,4 +63,20 @@
   &--bold {
     font-weight: 700;
   }
+}
+
+.button-l {
+  font-size: var(--font-size-button-large);
+  font-weight: var(--font-weight-button-large);
+  line-height: var(--line-height-button-large);
+  text-transform: uppercase;
+  kerning: 5%;
+}
+
+.button-s {
+  font-size: var(--font-size-button-small);
+  font-weight: var(--font-weight-button-small);
+  line-height: var(--line-height-button-small);
+  text-transform: uppercase;
+  kerning: 5%;
 }

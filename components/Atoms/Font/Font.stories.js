@@ -1,5 +1,7 @@
 import Title from './Title.twig';
 import Paragraph from './Paragraph.twig';
+import Other from './Other.twig';
+
 import './font.css';
 
 export default {
@@ -30,3 +32,5 @@ export const paragraphs = {
     }
   }
 };
+
+export const other = () => Other();
