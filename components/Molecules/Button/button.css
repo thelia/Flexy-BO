@@ -13,6 +13,7 @@
   font-family: var(--font-family-button-large);
   font-weight: var(--font-weight-button-large);
   line-height: var(--line-height-button-large);
+  border: 1px solid transparent;
 
   cursor: pointer;
   text-decoration: none;
