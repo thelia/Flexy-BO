@@ -29,3 +29,8 @@ svg {
   border-radius: 0px;
   background-color: var(--grey-dark);
 }
+
+.scorlll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--grey-dark) var(--grey-lighter);
+}
