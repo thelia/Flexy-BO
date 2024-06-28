@@ -8,7 +8,7 @@
       color: var(--grey-dark);
     }
 
-    &:focus {
+    &:focus-visible {
       outline: 2px solid var(--vermillon-medium);
       border-radius: 8px;
     }
@@ -21,7 +21,7 @@
       color: var(--vermillon-medium);
     }
 
-    &:focus {
+    &:focus-visible {
       outline: 2px solid var(--vermillon-medium);
       border-radius: 8px;
     }
