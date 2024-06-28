@@ -7,7 +7,7 @@ export default {
 
 export const list = {
   render: (args) => SocialMedias(args),
-  args: { size: 'w-4 h-4' },
+  args: { size: 'w-8 h-8' },
   argTypes: {
     size: {
       control: {
@@ -21,7 +21,7 @@ export const list = {
 export const base = {
   render: (args) => SocialMedia(args),
   args: {
-    size: 'w-4 h-4',
+    size: 'w-8 h-8',
     variant: 'black',
     icon: 'facebook',
     href: '#'
