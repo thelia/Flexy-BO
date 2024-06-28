@@ -1,108 +1,85 @@
 :root {
-  --vermillon-light: #fa533c;
-  --vermillon-lighter: #ff8f80;
-  --vermillon-lightest: #ffeaf8;
-  --vermillon-dark: #c4311c;
+  --vermillon-dark: #ff4822;
+  --vermillon: #ff7036;
+  --vermillon-medium: #ffb698;
+  --vermillon-light: #ffe5db;
+  --vermillon-lighter: #ffede5;
+  --vermillon-lightest: #fff5f1;
 
-  --charcoal-light: #444444;
-  --charcoal-medium: #333333;
-  --charcoal-dark: #222222;
-
-  --pearl-light: #f5f5f5;
-  --pearl-medium: #ebebeb;
-
-  --grey-medium: #9b9b9b;
-  --grey-dark: #787878;
+  --black: #282828;
+  --grey-darker: #424242;
+  --grey-dark: #545454;
+  --grey: #808080;
+  --grey-lighter: #d6d6d6;
+  --grey-lightest: #f5f5f5;
 
   --white: #ffffff;
 
-  --red-light: #ed5656;
-  --red: #d21919;
-  --background-red: #ffeded;
+  --success-darkest: #067d44;
+  --success-dark: #08a65a;
+  --success: #37e17b;
+  --success-lightest: #f8fffb;
 
-  --green-light: #eafbf5;
-  --green-dark: #008958;
+  --error-darkest: #b70101;
+  --error-dark: #d00000;
+  --error: #eb0000;
+  --error-light: #ff6666;
+  --error-lightest: #ffe1e1;
 
-  --wheat-light: #fff4de;
-  --wheat: #ffdd9c;
-  --wheat-dark: #ffab0c;
+  --warning-darkest: #9e5400;
+  --warning: #ffa800;
+  --warning-light: #ffdd9c;
+  --warning-lightest: #fff9ee;
 
-  --ultramarine-blue-light: #ecf6ff;
-  --ultramarine-blue-dark: #3162df;
+  --informative-darkest: #298094;
+  --informative: #40b1ca;
+  --informative-lightesr: #e9fbff;
 
-  --caribbean-green: #00d4a1;
+  --validated-darkest: #23806f;
+  --validated: #40cab1;
+  --validated-lightest: #eefffc;
+
+  --brown: #a33900;
+  --brown-light: #eb8e5c;
+
+  --electric-blue: #0531a8;
+  --electric-blue-light: #6f95fb;
+
   --purple: #5f0ab5;
-  --turquoise: #0fc8d3;
-  --brown: #820000;
-  --apple-green: #57c032;
-  --pink: #d800df;
+  --purple-light: #ba7df8;
 
-  --font-weight-h1: 800;
-  --font-weight-h2: 700;
-  --font-weight-h3: 700;
+  --lavender: #c800cc;
+  --lavender-light: #fb4dff;
+
+  --magenta: #cc006e;
+  --magenta-light: #ff5cb4;
+
+  --font-weight-h1: 700;
+  --font-weight-h2: 800;
+  --font-weight-h3: 800;
   --font-weight-h4: 700;
   --font-weight-h5: 600;
   --font-weight-h6: 400;
 
-  --font-size-2xs: rem-convert(12px);
-  --font-size-xs: rem-convert(14px);
-  --font-size-sm: rem-convert(16px);
-  --font-size-base: rem-convert(18px);
-  --font-size-lg: rem-convert(20px);
-  --font-size-xl: rem-convert(24px);
-  --font-size-2xl: rem-convert(32px);
-  --font-size-3xl: rem-convert(36px);
-  --font-size-4xl: rem-convert(38px);
+  --line-height-h1: normal;
+  --line-height-h2: normal;
+  --line-height-h3: normal;
+  --line-height-h4: normal;
+  --line-height-h5: normal;
+  --line-height-h6: normal;
 
-  --font-size-h1-d: var(--font-size-4xl);
-  --font-size-h1-m: rem-convert(28px);
-  --font-size-h2-d: var(--font-size-3xl);
-  --font-size-h2-m: rem-convert(26px);
-  --font-size-h3-d: var(--font-size-2xl);
-  --font-size-h3-m: rem-convert(22px);
-  --font-size-h4-d: var(--font-size-xl);
-  --font-size-h4-m: var(--font-size-lg);
-  --font-size-h5-d: var(--font-size-lg);
-  --font-size-h5-m: var(--font-size-base);
-  --font-size-h6-d: var(--font-size-lg);
-  --font-size-h6-m: var(--font-size-base);
+  --font-size-h1: rem-convert(28px);
+  --font-size-h2: rem-convert(20px);
+  --font-size-h3: rem-convert(16px);
+  --font-size-h4: rem-convert(16px);
+  --font-size-h5: rem-convert(14px);
+  --font-size-h6: rem-convert(14px);
 
-  --line-height-h1-d: rem-convert(57px);
-  --line-height-h1-m: rem-convert(42px);
-  --line-height-h2-d: rem-convert(54px);
-  --line-height-h2-m: rem-convert(39px);
-  --line-height-h3-d: rem-convert(48px);
-  --line-height-h3-m: rem-convert(33px);
-  --line-height-h4-d: rem-convert(30px);
-  --line-height-h4-m: rem-convert(32px);
-  --line-height-h5-d: rem-convert(28px);
-  --line-height-h5-m: rem-convert(26px);
-  --line-height-h6-d: rem-convert(28px);
-  --line-height-h6-m: rem-convert(26px);
+  --font-size-paragraph-1: rem-convert(14px);
+  --font-size-paragraph-2: rem-convert(12px);
 
-  --font-size-paragraph-1: var(--font-size-base);
-  --font-size-paragraph-2: var(--font-size-sm);
-  --font-size-paragraph-3: var(--font-size-sm);
-  --font-size-paragraph-4: var(--font-size-xs);
-  --font-size-paragraph-5: var(--font-size-xs);
-  --font-size-paragraph-6: var(--font-size-xs);
-  --font-size-paragraph-7: var(--font-size-2xs);
-
-  --line-height-paragraph-1: rem-convert(27px);
-  --line-height-paragraph-2: rem-convert(24px);
-  --line-height-paragraph-3: rem-convert(24px);
-  --line-height-paragraph-4: rem-convert(20px);
-  --line-height-paragraph-5: rem-convert(20px);
-  --line-height-paragraph-6: rem-convert(16.4px);
-  --line-height-paragraph-7: rem-convert(14.4px);
-
-  --font-family-paragraph-1: 'Poppins';
-  --font-family-paragraph-2: 'Poppins';
-  --font-family-paragraph-3: 'Roboto';
-  --font-family-paragraph-4: 'Poppins';
-  --font-family-paragraph-5: 'Roboto';
-  --font-family-paragraph-6: 'Roboto Condensed';
-  --font-family-paragraph-7: 'Roboto Condensed';
+  --line-height-paragraph-1: rem-convert(19px);
+  --line-height-paragraph-2: rem-convert(16px);
 
   --font-size-button-large: var(--font-size-sm);
   --font-size-button-medium: var(--font-size-xs);

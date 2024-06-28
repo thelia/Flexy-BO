@@ -5,49 +5,61 @@ module.exports = {
     extend: {
       colors: {
         vermillon: {
-          light: 'var(--vermillon-light)',
-          lighter: 'var(--vermillon-lighter)',
-          lightest: 'var(--vermillon-lightest)',
-          dark: 'var(--vermillon-dark)'
+          dark: '#ff4822',
+          DEFAULT: '#ff7036',
+          medium: '#ffb698',
+          light: '#ffe5db',
+          lighter: '#ffede5',
+          lightest: '#fff5f1'
         },
-        charcoal: {
-          light: 'var(--charcoal-light)',
-          medium: 'var(--charcoal-medium)',
-          dark: 'var(--charcoal-dark)'
-        },
-        pearl: {
-          light: 'var(--pearl-light)',
-          medium: 'var(--pearl-medium)'
-        },
+        black: '#282828',
         grey: {
-          medium: 'var(--grey-medium)',
-          dark: 'var(--grey-dark)'
+          darker: '#424242',
+          dark: '#545454',
+          DEFAULT: '#808080',
+          lighter: '#d6d6d6',
+          lightest: '#f5f5f5'
         },
-        white: 'var(--white)',
-        red: {
-          light: 'var(--red-light)',
-          DEFAULT: 'var(--red)'
+        white: '#ffffff',
+        success: {
+          darkest: '#067d44',
+          dark: '#08a65a',
+          DEFAULT: '#37e17b',
+          lightest: '#f8fffb'
         },
-        'background-red': 'var(--background-red)',
-        green: {
-          light: 'var(--green-light)',
-          dark: 'var(--green-dark)'
+        error: {
+          darkest: '#b70101',
+          dark: '#d00000',
+          DEFAULT: '#eb0000',
+          light: '#ff6666',
+          lightest: '#ffe1e1'
         },
-        wheat: {
-          light: 'var(--wheat-light)',
-          DEFAULT: 'var(--wheat)',
-          dark: 'var(--wheat-dark)'
+        warning: {
+          darkest: '#9e5400',
+          DEFAULT: '#ffa800',
+          light: '#ffdd9c',
+          lightest: '#fff9ee'
         },
-        'ultramarine-blue': {
-          light: 'var(--ultramarine-blue-light)',
-          dark: 'var(--ultramarine-blue-dark)'
+        informative: {
+          darkest: '#298094',
+          DEFAULT: '#40b1ca',
+          lightest: '#e9fbff'
         },
-        'caribbean-green': 'var(--caribbean-green)',
-        purple: 'var(--purple)',
-        turquoise: 'var(--turquoise)',
-        brown: 'var(--brown)',
-        'apple-green': 'var(--apple-green)',
-        pink: 'var(--pink)'
+        validated: {
+          darkest: '#23806f',
+          DEFAULT: '#40cab1',
+          lightest: '#eefffc'
+        },
+        brown: '#a33900',
+        'brown-light': '#eb8e5c',
+        'electric-blue': '#0531a8',
+        'electric-blue-light': '#6f95fb',
+        purple: '#5f0ab5',
+        'purple-light': '#ba7df8',
+        lavender: '#c800cc',
+        'lavender-light': '#fb4dff',
+        magenta: '#cc006e',
+        'magenta-light': '#ff5cb4'
       },
       screens: {
         xs: '320px',
