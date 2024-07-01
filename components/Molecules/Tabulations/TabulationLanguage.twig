@@ -1,0 +1,10 @@
+<div class="tab-container">
+  <li class="tabulation">
+    {% for item in tabs %}
+      <a href="{{ item.href | default('#') }}" class="{{ classes }} Tab Tab--language {{ item.disable ? 'disabled' : '' }}" 
+              data-target="{{ item.label }}">
+        {{ item.label }}
+      </a>
+    {% endfor %}
+  </li>
+</div>

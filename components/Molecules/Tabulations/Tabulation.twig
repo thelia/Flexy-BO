@@ -1,0 +1,13 @@
+
+  <div class="tabulation ">
+    {% for item in tabs %}
+      <button class="{{ classes }} Tab {% if loop.first %}first{% endif %} {% if loop.last %}last{% endif %} {{ item.disable ? 'disabled' : '' }} Tab--{{ item.notification ? 'notification' : 'standard' }}" 
+              data-target="{{ item.label }}" {% if item.disable %}disabled{% endif %}>
+        {{ item.label }}
+        {% if item.notification %}
+          {% include "../../Atoms/Labels/Label.twig" with { text:item.notification, classes: "bg-error-dark text-white" } %}
+        {% endif %}
+      </button>
+    {% endfor %}
+  </div>
+
