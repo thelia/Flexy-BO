@@ -1,0 +1,80 @@
+.MainMenuButton {
+  display: flex;
+  align-items: center;
+  background-color: var(--grey-dark);
+  color: var(--white);
+  padding: rem-convert(16px);
+  width: rem-convert(225px);
+  border-radius: rem-convert(8px);
+
+  &-icon {
+    margin-right: rem-convert(8px);
+  }
+
+  &-plus {
+    margin-left: auto;
+  }
+
+  &-icon,
+  &-plus {
+    width: rem-convert(22px);
+    height: rem-convert(22px);
+  }
+
+  &:hover {
+    background-color: var(--black);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--vermillon-medium);
+    outline-offset: 0px;
+  }
+
+  &--selected {
+    background-color: var(--grey-lightest);
+    color: var(--grey-darker);
+
+    .MainMenuButton-icon {
+      color: var(--vermillon-dark);
+    }
+
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+}
+
+.SubMenuButton {
+  display: flex;
+  align-items: center;
+  background-color: var(--grey-dark);
+  color: var(--white);
+  padding-left: rem-convert(16px);
+  padding-right: rem-convert(11px);
+  padding-top: rem-convert(11px);
+  padding-bottom: rem-convert(11px);
+  gap: rem-convert(8px);
+  border-radius: rem-convert(8px);
+
+  &:hover {
+    background-color: var(--black);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--vermillon-medium);
+    outline-offset: 0px;
+  }
+
+  &--selected {
+    background-color: var(--grey-lightest);
+    color: var(--grey-darker);
+
+    .SubMenuButton-icon {
+      color: var(--vermillon-dark);
+    }
+
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+}
