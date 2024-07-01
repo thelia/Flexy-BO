@@ -6,6 +6,7 @@
   padding: rem-convert(16px);
   width: rem-convert(225px);
   border-radius: rem-convert(8px);
+  text-decoration: none;
 
   &-icon {
     margin-right: rem-convert(8px);
@@ -55,6 +56,8 @@
   padding-bottom: rem-convert(11px);
   gap: rem-convert(8px);
   border-radius: rem-convert(8px);
+  text-decoration: none;
+  width: rem-convert(208px);
 
   &:hover {
     background-color: var(--black);
