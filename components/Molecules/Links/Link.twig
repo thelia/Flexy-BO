@@ -1,0 +1,13 @@
+{% set classes = classes %}
+
+<a href="{{ href }}" {% if target %}target="{{ target }}"{% endif %} class="Link {{ classes }} {% if error %}Link--error{% endif %}" {% if disabled %}aria-disabled="true" tabindex="-1" disabled{% endif %}
+  aria-label="{{ label }}" role="link">
+  {% if iconLeft %}
+    <span class="Link-icon h-2 w-2 {{ iconSize }}" aria-hidden="true">{{ source("/icons/" ~ iconLeft ~ ".svg") }}</span>
+  {% endif %}
+  {{ label }}
+  {% if iconRight %}
+    <span class="Link-icon h-2 w-2 {{ iconSize }}" aria-hidden="true">{{ source("/icons/" ~ iconRight ~ ".svg") }}</span>
+  {% endif %}
+</a>
+

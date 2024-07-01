@@ -1,0 +1,62 @@
+.Link {
+    @apply text-xs;
+    color: var(--black); 
+    display: inline-flex;
+    align-items: center;
+    transition: 0.2s ease all;
+    outline: 0;
+    text-decoration-line: underline;
+    font-weight: var(--font-weight-h4);
+    font-size: var(--font-size-paragraph-1);
+    line-height: --line-height-paragraph-1;
+  
+    &:hover {
+      color: var(--grey-dark); 
+    }
+  
+    &:focus-visible:not([disabled]) {
+      background-color: var(--vermillon-light); 
+      outline: none;
+      padding: 0px 8px;
+      color: var(--black); 
+
+      &:hover {
+        color: var(--grey-dark); 
+      }
+    }
+  
+    &--error {
+      color: var(--error-darkest);
+
+      &:hover {
+        color: var(--error-dark); 
+      }
+
+      &:focus-visible:not([disabled]) {
+        background-color: var(--error-lightest); 
+        outline: none;
+        padding: 0px 8px;
+        color: var(--error-darkest); 
+        
+        &:hover {
+          color: var(--error-dark); 
+        }
+      }
+    }
+  
+    &[disabled] {
+      color: var(--grey);
+      pointer-events: none;
+      cursor: not-allowed;
+
+      &:focus-visible { 
+        outline: none; 
+      }
+    }
+  
+    &:has(.Link-icon) {
+      gap: 10px;
+    }
+
+
+  }
