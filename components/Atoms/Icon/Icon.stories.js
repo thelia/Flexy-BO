@@ -8,7 +8,7 @@ export default {
 export const list = {
   render: (args) => Icon({ ...args, icons }),
   args: {
-    size: 'h-5 w-5'
+    size: 'h-8 w-8'
   },
   argTypes: {
     size: {

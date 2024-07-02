@@ -1,7 +1,4 @@
 {% set classes = '' %}
-{% if bold %}
-  {% set classes = classes ~ ' font-bold' %}
-{% endif %}
 {% if italic %}
   {% set classes = classes ~ ' italic' %}
 {% endif %}
@@ -9,6 +6,8 @@
   {% set classes = classes ~ ' line-through' %}
 {% endif %}
 <div class='Fonts'>
-  <div class='paragraph-1 {{ classes }}'>Paragraphe 1 : Portez ce vieux whisky au juge blond qui fume.</div>
-  <div class='paragraph-2 {{ classes }}'>Paragraphe 2 : Portez ce vieux whisky au juge blond qui fume.</div>
+  <div class='paragraph-1 {{ weight }} {{ classes }}'>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+  <div class='paragraph-2 {{ weight }} {{ classes }}'>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+  <div class='paragraph-3 {{ weight }} {{ classes }}'>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+  <div class='paragraph-4 {{ weight }} {{ classes }}'>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
 </div>

@@ -1,0 +1,29 @@
+.SocialMedia {
+  display: block;
+
+  &--black {
+    color: var(--black);
+
+    &:hover {
+      color: var(--grey-dark);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--vermillon-medium);
+      border-radius: 8px;
+    }
+  }
+
+  &--white {
+    color: var(--white);
+
+    &:hover {
+      color: var(--vermillon-medium);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--vermillon-medium);
+      border-radius: 8px;
+    }
+  }
+}
