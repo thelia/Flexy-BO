@@ -1,0 +1,15 @@
+<div class="flex">
+  <div class="bg-white p-4 flex flex-col items-center gap-8">
+    <h1 class="h1">Black</h1>
+    {% include './SocialMedia.twig' with { size: size, variant: "black", icon: "github", href: "#" } %}
+    {% include './SocialMedia.twig' with { size: size, variant: "black", icon: "facebook", href: "#" } %}
+    {% include './SocialMedia.twig' with { size: size, variant: "black", icon: "x", href: "#" } %}
+  </div>
+
+  <div class="bg-black p-4 flex flex-col gap-8 items-center">
+    <h1 class="h1 text-white">White</h1>
+    {% include './SocialMedia.twig' with { size: size, variant: "white", icon: "github", href: "#" } %}
+    {% include './SocialMedia.twig' with { size: size, variant: "white", icon: "facebook", href: "#" } %}
+    {% include './SocialMedia.twig' with { size: size, variant: "white", icon: "x", href: "#" } %}
+  </div>
+</div>

@@ -2,10 +2,5 @@
   border-radius: 18px;
   padding: 2px 9px;
   width: max-content;
-  text-transform: uppercase;
-  font-size: rem-convert(10px);
-  letter-spacing: 5%;
-  font-weight: 600;
-  line-height: rem-convert(13px);
   text-align: center;
 }
