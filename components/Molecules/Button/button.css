@@ -10,11 +10,9 @@
   text-transform: uppercase;
   kerning: 5%;
   font-size: var(--font-size-button-large);
-  font-family: var(--font-family-button-large);
   font-weight: var(--font-weight-button-large);
   line-height: var(--line-height-button-large);
   border: 1px solid transparent;
-
   cursor: pointer;
   text-decoration: none;
 
@@ -23,10 +21,10 @@
 
     & > span.icon {
       @apply w-5 h-5;
-      &-left {
+      &-left:not(:only-child) {
         margin-right: rem-convert(16px);
       }
-      &-right {
+      &-right:not(:only-child) {
         margin-left: rem-convert(16px);
       }
     }
@@ -41,10 +39,10 @@
   &--large {
     & > span.icon {
       @apply w-5 h-5;
-      &-left {
+      &-left:not(:only-child) {
         margin-right: rem-convert(8px);
       }
-      &-right {
+      &-right:not(:only-child) {
         margin-left: rem-convert(8px);
       }
     }
@@ -57,16 +55,15 @@
   &--small {
     padding: 8px;
     font-size: var(--font-size-button-small);
-    font-family: var(--font-family-button-small);
     font-weight: var(--font-weight-button-small);
     line-height: var(--line-height-button-small);
 
     & > span.icon {
       @apply w-4 h-4;
-      &-left {
+      &-left:not(:only-child) {
         margin-right: rem-convert(4px);
       }
-      &-right {
+      &-right:not(:only-child) {
         margin-left: rem-convert(4px);
       }
     }
@@ -80,7 +77,8 @@
       background: var(--grey-dark);
     }
 
-    &:disabled {
+    &:disabled,
+    &[disabled] {
       background: var(--grey-lighter);
       color: var(--white);
     }
@@ -100,7 +98,8 @@
       color: var(--grey-dark);
     }
 
-    &:disabled {
+    &:disabled,
+    &[disabled] {
       border-color: var(--grey-lighter);
       color: var(--grey-lighter);
     }
@@ -118,7 +117,8 @@
       color: var(--grey-dark);
     }
 
-    &:disabled {
+    &:disabled,
+    &[disabled] {
       background: var(--white);
       color: var(--grey-lighter);
     }
@@ -137,7 +137,8 @@
       background: var(--grey-lighter);
     }
 
-    &:disabled {
+    &:disabled,
+    &[disabled] {
       background: var(--white);
       color: var(--grey-lighter);
     }
@@ -161,7 +162,8 @@
       background: var(--error-dark);
     }
 
-    &:disabled {
+    &:disabled,
+    &[disabled] {
       background: var(--error-lightest);
       color: var(--white);
     }

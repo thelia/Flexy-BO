@@ -7,7 +7,9 @@
   {% if icon_left %}
     <span class='icon icon-left'>{{ source("/icons/"~ icon_left ~".svg") }}</span>
   {% endif %}
-  {{ text|striptags('<span>')|raw }}
+  {% if text %}
+    <span>{{ text }}</span>
+  {% endif %}
   {% if icon_right %}
     <span class='icon icon-right'>{{ source("/icons/"~ icon_right ~".svg") }}</span>
   {% endif %}
