@@ -85,10 +85,6 @@
   --font-weight-button-large: 600;
   --font-weight-button-small: 600;
 
-  --font-family-button-large: 'Poppins';
-  --font-family-button-medium: 'Poppins';
-  --font-family-button-small: 'Poppins';
-
   --font-size-link-large: var(--font-size-sm);
   --font-size-link-medium: var(--font-size-xs);
   --font-size-link-small: var(--font-size-2xs);
@@ -96,12 +92,6 @@
   --font-weight-link-large: 500;
   --font-weight-link-medium: 500;
   --font-weight-link-small: 400;
-
-  --font-family-link-large: 'Poppins';
-  --font-family-link-medium: 'Poppins';
-  --font-family-link-small: 'Poppins';
-
-  --font-family-indication: 'Roboto Condensed';
 
   --font-size-indication: var(--font-size-xs);
   --font-size-indication-small: var(--font-size-2xs);
