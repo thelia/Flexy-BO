@@ -1,5 +1,5 @@
 <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_2829_91346" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="6">
+<mask id="mask0_2829_91346" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="6" width="36" height="36">
 <path d="M24.0003 6C33.9415 6 42.0005 14.0591 42.0005 23.9996C42.0005 33.9408 33.9416 42 24.0003 42C14.0589 42 6 33.9408 6 23.9996C6 14.0591 14.0591 6 24.0003 6Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_2829_91346)">
