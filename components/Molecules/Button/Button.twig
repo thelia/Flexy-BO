@@ -1,0 +1,14 @@
+{% set classes = classes|default('') %}
+{% if variant %}{% set classes = classes ~ ' Button--' ~ variant %}{% endif %}
+{% set tag = 'button' %}
+{% if href %}{% set tag = 'a' %}{% endif %}
+
+<{{ tag }} class='Button {{ classes }}' {% if disabled %}disabled{% endif %} {% if href %}href='{{ href }}'{% else %}type='{{ type|default('button') }}'{% endif %}>
+  {% if icon_left %}
+    <span class='icon icon-left'>{{ source("/icons/"~ icon_left ~".svg") }}</span>
+  {% endif %}
+  {{ text|striptags('<span>')|raw }}
+  {% if icon_right %}
+    <span class='icon icon-right'>{{ source("/icons/"~ icon_right ~".svg") }}</span>
+  {% endif %}
+</{{ tag }}>
