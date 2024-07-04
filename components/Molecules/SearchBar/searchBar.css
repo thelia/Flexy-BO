@@ -1,0 +1,55 @@
+.SearchBar {
+  display: flex;
+  align-items: center;
+  color: var(--grey-dark);
+  outline: 1px solid var(--grey-lighter);
+  border-radius: rem-convert(8px);
+
+  &--lg {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 24px;
+    padding-right: 15px;
+  }
+
+  &--sm {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 7px;
+  }
+
+  &-icon {
+    color: var(--grey-dark);
+    width: 32px;
+    height: 32px;
+  }
+
+  &,
+  input {
+    flex-grow: 1;
+    background: var(--white);
+  }
+
+  input {
+    &::placeholder {
+      @apply text-grey-dark/75;
+      font-weight: 300;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:hover {
+    &,
+    input {
+      background: var(--grey-lightest);
+    }
+  }
+
+  &:focus-within {
+    outline: 2px solid var(--vermillon-medium);
+  }
+}
