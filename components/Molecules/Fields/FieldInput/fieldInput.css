@@ -9,7 +9,6 @@
   }
 
   &-label {
-    @apply paragraph-5;
     color: var(--black);
   }
 
@@ -25,8 +24,7 @@
   }
 
   &-input {
-    @apply paragraph-4;
-    border: 1px solid var(--theme-medium);
+    border: 1px solid var(--vermillon-medium);
     border-radius: 8px;
     color: var(--black);
     width: 100%;
@@ -34,16 +32,16 @@
     transition: 0.2s ease all;
 
     &:hover {
-      background-color: var(--theme-lightest);
+      background-color: var(--vermillon-lightest);
     }
 
     &:focus-visible {
       outline-offset: 2px;
-      outline: 1px solid var(--theme);
+      outline: 1px solid var(--vermillon);
     }
 
     &--filled {
-      border-color: var(--theme);
+      border-color: var(--vermillon);
     }
 
     &--unit {
@@ -59,9 +57,9 @@
     display: flex;
     align-items: center;
     pointer-events: none;
-    font-size: var(--font-size-paragraph-4);
-    font-family: var(--font-family-paragraph-5);
-    line-height: var(--line-height-paragraph-4);
+    font-size: var(--font-size-paragraph-3);
+    font-family: var(--font-family-paragra3);
+    line-height: var(--line-height-paragraph-3);
   }
 
   &--small {
@@ -98,7 +96,6 @@
   }
 
   &-error {
-    @apply paragraph-5;
     color: var(--error-dark);
     font-style: italic;
   }

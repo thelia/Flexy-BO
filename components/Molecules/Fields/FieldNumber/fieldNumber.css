@@ -4,8 +4,7 @@
   gap: rem-convert(4px);
 
   &-input {
-    @apply paragraph-4;
-    border: 1px solid var(--theme-medium);
+    border: 1px solid var(--vermillon-medium);
     border-radius: 8px;
     color: var(--black);
     padding: rem-convert(16px) rem-convert(10px);
@@ -14,16 +13,16 @@
     text-align: center;
 
     &:hover {
-      background-color: var(--theme-lightest);
+      background-color: var(--vermillon-lightest);
     }
 
     &:focus-visible {
       outline-offset: 2px;
-      outline: 1px solid var(--theme);
+      outline: 1px solid var(--vermillon);
     }
 
     &--filled {
-      border-color: var(--theme);
+      border-color: var(--vermillon);
     }
   }
 
@@ -52,7 +51,6 @@
   }
 
   &-error {
-    @apply paragraph-5;
     color: var(--error-dark);
     font-style: italic;
   }

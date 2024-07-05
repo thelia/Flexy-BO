@@ -39,36 +39,3 @@ export const Base = {
     }
   }
 };
-
-export const WithButton = {
-  render: (args) => FieldInput(args),
-  play: () => {
-    fieldInputFunction();
-  },
-  args: {
-    name: 'promoCode',
-    type: 'text',
-    label: '',
-    placeholder: 'Code Promo',
-    min: '',
-    max: '',
-    error: '',
-    tooltip: '',
-    button: 'Appliquer'
-  },
-  argTypes: {
-    disabled: {
-      control: { type: 'boolean' }
-    },
-    required: {
-      control: { type: 'boolean' }
-    },
-    success: {
-      control: { type: 'boolean' }
-    },
-    size: {
-      options: ['large', 'small'],
-      control: { type: 'select' }
-    }
-  }
-};
