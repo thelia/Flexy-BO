@@ -1,0 +1,15 @@
+<nav class='Header'>
+	<div class='Header-logo'>
+		{{ source('/images/placeholder-logo.svg') }}
+	</div>
+
+	<div class='Header-right'>
+
+		{% include '../../Molecules/Button/Button.twig' with { variant: 'secondary', icon_left: "search", classes: "Button--large ButtonSearch"  } %}
+		{% include '../../Molecules/SearchBar/SearchBar.twig' with { size: 'lg' } %}
+		{% include '../../Molecules/Button/Button.twig' with { variant: 'tertiary', text: 'FR', icon_left: "french", icon_right: "chevron-down", classes: "Button--large"  } %}
+		{% include '../../Molecules/Button/Button.twig' with { variant: 'quartenary', icon_left: "config", classes: "Button--large"  } %}
+		{% include '../../Molecules/UserMenuButton/UserMenuButton.twig' with { name: 'Bruce Wayne', avatar: 'https://via.placeholder.com/150', variant: 'lg' } %}
+		{% include '../../Molecules/Button/Button.twig' with { variant: 'primary', icon_left: "eye", classes: "Button--large"  } %}
+	</div>
+</nav>
