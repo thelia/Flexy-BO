@@ -1,0 +1,9 @@
+.NavMenu {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  padding: 8px;
+  gap: 2px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
