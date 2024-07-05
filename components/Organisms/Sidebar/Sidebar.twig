@@ -1,0 +1,53 @@
+<aside class='Sidebar'>
+	<ul class='Sidebar-menu'>
+		<li class='Sidebar-menu-item'>
+			{% include '../../Molecules/MenuButton/MainMenuButton.twig' with { label: ' Dashboard', icon: "dashboard", href: "#" } %}
+		</li>
+		<li class='Sidebar-menu-item'>
+			{% include '../../Molecules/MenuButton/MainMenuButton.twig' with { label: 'Commandes', icon: "orders", hasSubMenus: true, href: "#" } %}
+			<ul class="Sidebar-menu-item-submenu">
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'Toutes mes commandes', count: 24, labelClasses: "bg-white text-black" } %}
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'Non payée', count: 2, labelClasses: "bg-warning text-black" } %}
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'Confirmée', count: 4, labelClasses: "bg-informative text-black" } %}
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'Payée', count: 2, labelClasses: "bg-validated text-black" } %}
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'En traitement', count: 1, labelClasses: "bg-lavender-light text-black" } %}
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'Envoyée', count: 1, labelClasses: "bg-purple-light text-black" } %}
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'Annulée', count: 4, labelClasses: "bg-grey-lighter text-black" } %}
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'Remboursée', count: 6, labelClasses: "bg-electric-blue-light text-black" } %}
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'Pickée', count: 2, labelClasses: "bg-brown-light text-black" } %}
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'Echangée', count: 2, labelClasses: "bg-magenta-light text-black" } %}
+				{% include '../../Molecules/MenuButton/SubMenuButton.twig' with { label: 'Bloquée', count: 2, labelClasses: "bg-error-light text-black" } %}
+			</ul>
+		</li>
+		<li class='Sidebar-menu-item'>
+			{% include '../../Molecules/MenuButton/MainMenuButton.twig' with { label: 'Clients', icon: "clients", href: "#" } %}
+		</li>
+		<li class='Sidebar-menu-item'>
+			{% include '../../Molecules/MenuButton/MainMenuButton.twig' with { label: 'Catalogue', icon: "catalog", href: "#" } %}
+		</li>
+		<li class='Sidebar-menu-item'>
+			{% include '../../Molecules/MenuButton/MainMenuButton.twig' with { label: 'Pages', icon: "pages", href: "#" } %}
+		</li>
+		<li class='Sidebar-menu-item'>
+			{% include '../../Molecules/MenuButton/MainMenuButton.twig' with { label: 'Blocks', icon: "blocks", href: "#" } %}
+		</li>
+		<li class='Sidebar-menu-item'>
+			{% include '../../Molecules/MenuButton/MainMenuButton.twig' with { label: 'Design', icon: "design", href: "#" } %}
+		</li>
+		<li class='Sidebar-menu-item'>
+			{% include '../../Molecules/MenuButton/MainMenuButton.twig' with { label: 'Outils', icon: "tools", href: "#" } %}
+		</li>
+		<li class='Sidebar-menu-item'>
+			{% include '../../Molecules/MenuButton/MainMenuButton.twig' with { label: 'Modules', icon: "modules", href: "#" } %}
+		</li>
+		<li class='Sidebar-menu-item'>
+			{% include '../../Molecules/MenuButton/MainMenuButton.twig' with { label: 'Aide', icon: "tooltip", href: "#" } %}
+		</li>
+	</ul>
+	<div class='Sidebar-footer'>
+		<div class='Sidebar-footer-icon'>
+			{{ source('/images/thelia-white.svg') }}
+		</div>
+		<span class="font-light text-white/50 paragraph-4">V2.5.0</span>
+	</div>
+</aside>

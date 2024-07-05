@@ -1,17 +1,22 @@
 {% set classes = "" %}
 {% set hasSubMenus = hasSubMenus ?? false %}
 {% if selected %}
-  {% set classes = classes ~ " MainMenuButton--selected" %}
+	{% set classes = classes ~ " MainMenuButton--selected" %}
+{% endif %}
+{% if hasSubMenus %}
+	{% set classes = classes ~ " MainMenuButton--hasSubMenus" %}
 {% endif %}
 
 <a href="{{href}}" class="MainMenuButton {{ classes }}">
-  <div class="MainMenuButton-icon">
-      {{ source("/icons/dashboard.svg") }}
-  </div>
-  <div class="MainMenuButton-label paragraph-3 font-semibold">{{label}}</div>
-  {% if hasSubMenus %}
-    <div class="MainMenuButton-plus">
-        {{ source("/icons/plus.svg") }}
-    </div>
-  {% endif %}
+	{% if icon %}
+		<div class="MainMenuButton-icon">
+			{{ source("/icons/" ~ icon ~ ".svg") }}
+		</div>
+	{% endif %}
+	<div class="font-semibold MainMenuButton-label paragraph-3">{{label}}</div>
+	{% if hasSubMenus %}
+		<div class="MainMenuButton-plus">
+			{{ source("/icons/plus.svg") }}
+		</div>
+	{% endif %}
 </a>

@@ -1,10 +1,9 @@
 .MainMenuButton {
   display: flex;
   align-items: center;
-  background-color: var(--grey-dark);
+  background-color: var(--grey-darker);
   color: var(--white);
   padding: rem-convert(16px);
-  width: rem-convert(225px);
   border-radius: rem-convert(8px);
   text-decoration: none;
 
@@ -48,6 +47,7 @@
 .SubMenuButton {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--grey-dark);
   color: var(--white);
   padding-left: rem-convert(16px);

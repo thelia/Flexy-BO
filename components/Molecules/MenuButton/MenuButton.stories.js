@@ -10,7 +10,8 @@ export const base = {
   args: {
     label: 'Dashboard',
     selected: false,
-    hasSubMenus: true
+    hasSubMenus: true,
+    icon: 'dashboard'
   }
 };
 
@@ -19,6 +20,7 @@ export const subMenu = {
   args: {
     label: 'Toutes mes commandes',
     selected: false,
-    count: 24
+    count: 24,
+    labelClasses: 'bg-white text-black'
   }
 };
