@@ -1,24 +1,49 @@
 {
-  "vermillon": [
+  "main": [
+    "bg-vermillon-dark",
+    "bg-vermillon",
+    "bg-vermillon-medium",
     "bg-vermillon-light",
     "bg-vermillon-lighter",
-    "bg-vermillon-lightest",
-    "bg-vermillon-dark"
+    "bg-black",
+    "bg-grey-darker",
+    "bg-grey-dark",
+    "bg-grey",
+    "bg-grey-lighter",
+    "bg-grey-lightest",
+    "bg-white"
   ],
-  "charcoal": ["bg-charcoal-light", "bg-charcoal-medium", "bg-charcoal-dark"],
-  "pearl": ["bg-pearl-light", "bg-pearl-medium"],
-  "grey": ["bg-grey-medium", "bg-grey-dark"],
-  "white": ["bg-white"],
-  "red": ["bg-red-light", "bg-red", "bg-background-red"],
-  "green": ["bg-green-light", "bg-green-dark"],
-  "wheat": ["bg-wheat-light", "bg-wheat", "bg-wheat-dark"],
-  "ultramarine-blue": ["bg-ultramarine-blue-light", "bg-ultramarine-blue-dark"],
-  "caribbean-green": ["bg-caribbean-green"],
-  "others": [
-    "bg-purple",
-    "bg-turquoise",
+  "forms": [
+    "bg-success-darkest",
+    "bg-success-dark",
+    "bg-success",
+    "bg-success-lightest",
+    "bg-error-darkest",
+    "bg-error-dark",
+    "bg-error",
+    "bg-error-light",
+    "bg-error-lightest",
+    "bg-warning-darkest",
+    "bg-warning",
+    "bg-warning-light",
+    "bg-warning-lightest",
+    "bg-informative-darkest",
+    "bg-informative",
+    "bg-informative-lightest",
+    "bg-validated-darkest",
+    "bg-validated",
+    "bg-validated-lightest"
+  ],
+  "labels": [
     "bg-brown",
-    "bg-apple-green",
-    "bg-pink"
+    "bg-brown-light",
+    "bg-electric-blue",
+    "bg-electric-blue-light",
+    "bg-purple",
+    "bg-purple-light",
+    "bg-lavender",
+    "bg-lavender-light",
+    "bg-magenta",
+    "bg-magenta-light"
   ]
 }

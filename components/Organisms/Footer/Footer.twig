@@ -1,0 +1,16 @@
+<footer class="Footer">
+  <p class="paragraph-4 font-bold text-black">&copy; Thelia 2024
+    <span class='font-light'>
+      - Version 2.5.0
+      - <a href="http://www.openstudio.fr/" target="_blank">Made with ❤️ by OpenStudio</a>
+    </span>
+  </p>
+
+  {# {hook name="main.in-footer" location="in_footer" } #}
+
+  <div class="Footer-socials">
+    {% include '../../Molecules/SocialMedia/SocialMedia.twig' with { size: "h-[18px] w-[18px]", variant: "black", icon: "github", href: "#" } %}
+    {% include '../../Molecules/SocialMedia/SocialMedia.twig' with { size: "h-[18px] w-[18px]", variant: "black", icon: "x", href: "#" } %}
+    {% include '../../Molecules/SocialMedia/SocialMedia.twig' with { size: "h-[18px] w-[18px]", variant: "black", icon: "facebook", href: "#" } %} 
+  </div>
+</footer>

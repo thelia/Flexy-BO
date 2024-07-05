@@ -1,0 +1,17 @@
+{% set classes = "" %}
+{% set hasSubMenus = hasSubMenus ?? false %}
+{% if selected %}
+  {% set classes = classes ~ " MainMenuButton--selected" %}
+{% endif %}
+
+<a href="{{href}}" class="MainMenuButton {{ classes }}">
+  <div class="MainMenuButton-icon">
+      {{ source("/icons/dashboard.svg") }}
+  </div>
+  <div class="MainMenuButton-label paragraph-3 font-semibold">{{label}}</div>
+  {% if hasSubMenus %}
+    <div class="MainMenuButton-plus">
+        {{ source("/icons/plus.svg") }}
+    </div>
+  {% endif %}
+</a>
