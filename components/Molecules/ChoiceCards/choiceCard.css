@@ -5,7 +5,7 @@
   padding: 16px;
   border-radius: 8px;
   background-color: var(--white);
-  width: rem-convert(130px);
+  min-width: rem-convert(130px);
   cursor: pointer;
 
   &--md {
