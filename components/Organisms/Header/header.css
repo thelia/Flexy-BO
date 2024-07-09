@@ -12,6 +12,31 @@
     .SearchBar {
       width: 450px;
     }
+
+    &-user,
+    &-config,
+    &-lang {
+      position: relative;
+
+      .UserMenuButton,
+      .Button {
+        height: 100%;
+      }
+
+      &-menu {
+        position: absolute;
+        display: none;
+        top: 70px;
+      }
+
+      &:focus-within {
+        .Header-right-user-menu,
+        .Header-right-config-menu,
+        .Header-right-lang-menu {
+          display: block;
+        }
+      }
+    }
   }
 
   .ButtonSearch {
