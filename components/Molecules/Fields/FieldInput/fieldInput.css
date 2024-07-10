@@ -28,7 +28,10 @@
     border-radius: 8px;
     color: var(--black);
     width: 100%;
-    padding: rem-convert(16px) rem-convert(10px);
+    padding-top: rem-convert(16px);
+    padding-bottom: rem-convert(16px);
+    padding-left: rem-convert(14px);
+    padding-right: rem-convert(10px);
     transition: 0.2s ease all;
 
     &:hover {

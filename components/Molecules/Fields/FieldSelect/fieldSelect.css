@@ -24,7 +24,10 @@
     color: var(--grey-dark);
     font-style: italic;
     width: 100%;
-    padding: rem-convert(16px) rem-convert(10px);
+    padding-top: rem-convert(16px);
+    padding-bottom: rem-convert(16px);
+    padding-left: rem-convert(14px);
+    padding-right: rem-convert(10px);
     appearance: none;
     background: url('/assets/icons/chevron-down.svg');
     background-repeat: no-repeat;
