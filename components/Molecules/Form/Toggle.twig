@@ -1,4 +1,4 @@
-<label class="ToggleButton  {{ classes|default('') }} {{ error ? 'error'  : ''}}" for='{{ name }}'>
+<label class="ToggleButton  {{ classes|default('') }} {{ error ? 'error'  : ''}}">
 	<input type="checkbox" name='{{ name }}' value='{{ value }}' tabindex="-1" {% if disabled %} disabled {% endif %} {% if checked %} checked {% endif %}>
 	{% if labelOff %}
 		<span class="ToggleButton-uncheckedLabel">{{ labelOff }}</span>
