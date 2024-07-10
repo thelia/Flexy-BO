@@ -1,0 +1,6 @@
+{% set type = type|default('label') %}
+<{{type}} class="Radio {{ classes|default('') }} {{ error|default(0) ? 'error'  : ''}}" for='{{ name }}'>
+	<input type="radio" name='{{ name }}' value='{{ value|default('') }}' {% if id %} id='{{ id }}' {% endif %} {% if disabled %} disabled {% endif %} {% if checked %} checked {% endif %}>
+	<span class="checkmark"></span>
+	<span>{{ label }}</span>
+</{{type}}>
