@@ -33,7 +33,7 @@
 
   --informative-darkest: #298094;
   --informative: #40b1ca;
-  --informative-lightesr: #e9fbff;
+  --informative-lightest: #e9fbff;
 
   --validated-darkest: #23806f;
   --validated: #40cab1;
@@ -76,17 +76,14 @@
   --line-height-paragraph-3: rem-convert(22px);
   --line-height-paragraph-4: rem-convert(18px);
 
-  --font-size-button-large: var(--font-size-sm);
-  --font-size-button-medium: var(--font-size-xs);
-  --font-size-button-small: var(--font-size-2xs);
+  --font-size-button-large: rem-convert(14px);
+  --font-size-button-small: rem-convert(12px);
 
-  --font-weight-button-large: 500;
-  --font-weight-button-medium: 500;
-  --font-weight-button-small: 400;
+  --line-height-button-large: rem-convert(19px);
+  --line-height-button-small: rem-convert(16px);
 
-  --font-family-button-large: 'Poppins';
-  --font-family-button-medium: 'Poppins';
-  --font-family-button-small: 'Poppins';
+  --font-weight-button-large: 600;
+  --font-weight-button-small: 600;
 
   --font-size-link-large: var(--font-size-sm);
   --font-size-link-medium: var(--font-size-xs);
@@ -95,12 +92,6 @@
   --font-weight-link-large: 500;
   --font-weight-link-medium: 500;
   --font-weight-link-small: 400;
-
-  --font-family-link-large: 'Poppins';
-  --font-family-link-medium: 'Poppins';
-  --font-family-link-small: 'Poppins';
-
-  --font-family-indication: 'Roboto Condensed';
 
   --font-size-indication: var(--font-size-xs);
   --font-size-indication-small: var(--font-size-2xs);

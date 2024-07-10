@@ -1,0 +1,38 @@
+.IconTextChoiceCard {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--white);
+  min-width: rem-convert(130px);
+  cursor: pointer;
+
+  &--md {
+    border-radius: 0px;
+    border-bottom: 1px solid var(--grey-lighter);
+
+    &:focus-visible {
+      border-bottom: 0px;
+    }
+  }
+
+  &:hover {
+    background-color: var(--grey-lightest);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--vermillon-medium);
+  }
+
+  &:disabled,
+  &[disabled] {
+    color: var(--grey-lighter);
+    cursor: not-allowed;
+  }
+
+  &-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
