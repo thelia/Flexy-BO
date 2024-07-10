@@ -1,0 +1,11 @@
+<div class='w-56 h-7' role='img' aria-label='Placeholder Logo'>
+{% if type == 'placeholder' %}
+    <img class='w-full h-full' src="{{ path | default('/images/placeholder-logo.svg') }}" alt="{{ alt | default('Placeholder Logo')}}">
+{% elseif type == 'thelia' %}
+    {% if theme == 'dark' %}
+      <img class='w-full h-full' src='/images/thelia-black.svg' alt='Logo Thelia'>
+    {% else %}
+      <img class='w-full h-full' src='/images/thelia-white.svg' alt='Logo Thelia'>
+    {% endif %} 
+{% endif %}
+</div>

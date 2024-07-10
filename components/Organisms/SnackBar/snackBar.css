@@ -1,0 +1,86 @@
+.SnackBar {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding-left: rem-convert(48px);
+  padding-right: rem-convert(24px);
+  padding-top: rem-convert(24px);
+  padding-bottom: rem-convert(24px);
+  display: flex;
+  max-width: rem-convert(360px);
+  flex-direction: column;
+  position: relative;
+
+  &-close {
+    width: rem-convert(24px);
+    height: rem-convert(24px);
+    position: absolute;
+    top: 14px;
+    right: 14px;
+  }
+
+  &-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    top: 24px;
+  }
+
+  &:not(:has(.SnackBar-icon)) {
+    padding-left: rem-convert(16px);
+  }
+
+  &:not(:has(.SnackBar-actions)) {
+    .SnackBar-content {
+      margin-bottom: 0px;
+    }
+  }
+
+  &:not(:has(.SnackBar-title)) {
+    .SnackBar-content {
+      margin-top: 0px;
+    }
+  }
+
+  &-title {
+    position: relative;
+  }
+
+  &-content {
+    margin-top: rem-convert(4px);
+    margin-bottom: rem-convert(16px);
+  }
+
+  &-actions {
+    display: flex;
+    gap: rem-convert(16px);
+  }
+
+  &--info {
+    background: var(--informative-lightest);
+    border-color: var(--informative);
+
+    .SnackBar-icon {
+      color: var(--informative);
+    }
+  }
+
+  &--success {
+    background: var(--success-lightest);
+    border-color: var(--success-dark);
+
+    .SnackBar-icon {
+      color: var(--success-dark);
+    }
+  }
+
+  &--warning {
+    background: var(--warning-lightest);
+    border-color: var(--warning);
+  }
+
+  &--error {
+    background: var(--error-lightest);
+    border-color: var(--error);
+  }
+}

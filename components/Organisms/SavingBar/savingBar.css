@@ -1,0 +1,20 @@
+.SavingBar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  align-items: center;
+  padding: 13px 98px;
+  min-height: rem-convert(80px);
+  background-color: var(--grey-lightest);
+  border-top: 1px solid var(--grey);
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    padding: 13px 35px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 400px) {
+    padding: 13px 23px;
+  }
+}

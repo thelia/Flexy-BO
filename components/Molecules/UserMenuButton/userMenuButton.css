@@ -1,0 +1,47 @@
+.UserMenuButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background-color: var(--grey-lightest);
+  padding: 7px 8px;
+
+  &--sm,
+  &--xs {
+    .UserMenuButton-name {
+      display: none;
+    }
+  }
+
+  &--xs {
+    .UserMenuButton-avatar {
+      img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+
+  &:hover,
+  &--active {
+    background-color: var(--grey-lighter);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--vermillon-medium);
+  }
+
+  &-avatar {
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+  &-icon {
+    width: 22px;
+    height: 22px;
+  }
+}

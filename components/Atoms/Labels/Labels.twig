@@ -1,16 +1,35 @@
 <div class="flex flex-col gap-2">
+  <h2 class="h2">
+    White text
+  </h2>
+  {% include "./Label.twig" with { text, classes: "bg-black text-white" } %}
   {% include "./Label.twig" with { text, classes: "bg-grey-dark text-white" } %}
-  {% include "./Label.twig" with { text, classes: "bg-white" } %}
-  {% include "./Label.twig" with { text, classes: "bg-wheat-dark text-white" } %}
-  {% include "./Label.twig" with { text, classes: "bg-caribbean-green text-white" } %}
-  {% include "./Label.twig" with { text, classes: "bg-apple-green text-white" } %}
+  {% include "./Label.twig" with { text, classes: "bg-error-dark text-white" } %}
+  {% include "./Label.twig" with { text, classes: "bg-success-darkest text-white" } %}
+  {% include "./Label.twig" with { text, classes: "bg-warning-darkest text-white" } %}
+  {% include "./Label.twig" with { text, classes: "bg-informative-darkest text-white" } %}
+  {% include "./Label.twig" with { text, classes: "bg-validated-darkest text-white" } %}
   {% include "./Label.twig" with { text, classes: "bg-brown text-white" } %}
-  {% include "./Label.twig" with { text, classes: "bg-turquoise text-white" } %}
-  {% include "./Label.twig" with { text, classes: "bg-vermillon-light text-white" } %}
+  {% include "./Label.twig" with { text, classes: "bg-electric-blue text-white" } %}
   {% include "./Label.twig" with { text, classes: "bg-purple text-white" } %}
-  {% include "./Label.twig" with { text, classes: "bg-green-dark text-white" } %}
-  {% include "./Label.twig" with { text, classes: "bg-pink text-white" } %}
-  {% include "./Label.twig" with { text, classes: "bg-red text-white" } %}
-  {% include "./Label.twig" with { text, classes: "bg-grey-dark text-white" } %}
+  {% include "./Label.twig" with { text, classes: "bg-lavender text-white" } %}
+  {% include "./Label.twig" with { text, classes: "bg-magenta text-white" } %}
+
+  <h2 class="h2">
+    Black text
+  </h2>
+
+  {% include "./Label.twig" with { text, classes: "bg-white" } %}
+  {% include "./Label.twig" with { text, classes: "bg-grey-lighter" } %}
+  {% include "./Label.twig" with { text, classes: "bg-error-light" } %}
+  {% include "./Label.twig" with { text, classes: "bg-success" } %}
+  {% include "./Label.twig" with { text, classes: "bg-warning" } %}
+  {% include "./Label.twig" with { text, classes: "bg-informative" } %}
+  {% include "./Label.twig" with { text, classes: "bg-validated" } %}
+  {% include "./Label.twig" with { text, classes: "bg-brown-light" } %}
+  {% include "./Label.twig" with { text, classes: "bg-electric-blue-light" } %}
+  {% include "./Label.twig" with { text, classes: "bg-purple-light" } %}
+  {% include "./Label.twig" with { text, classes: "bg-lavender-light" } %}
+  {% include "./Label.twig" with { text, classes: "bg-magenta-light" } %}
 </div>
 

@@ -1,0 +1,28 @@
+<div class="SavingBar">
+  {% if tertiaryAction %}
+    {% include '../../Molecules/Button/Button.twig' with {
+      variant: tertiaryAction.variant,
+      text: tertiaryAction.label,
+      icon_left: tertiaryAction.iconLeft,
+      classes: 'Button--large',
+    } %}
+  {% endif %}
+  
+  {% if secondaryAction %}
+    {% include '../../Molecules/Button/Button.twig' with {
+      variant: secondaryAction.variant,
+      text: secondaryAction.label,
+      icon_left: secondaryAction.iconLeft,
+      classes: 'Button--large',
+    } %}
+  {% endif %}
+  
+  {% if action %}
+    {% include '../../Molecules/Button/Button.twig' with {
+      variant: action.variant,
+      text: action.label,
+      icon_left: action.iconLeft,
+      classes: 'Button--large',
+    } %}
+  {% endif %}
+</div>
