@@ -1,0 +1,13 @@
+{% for title, line in illustrations %}
+  <div class="mx-0 my-16 text-xl text-center">{{ title }}</div>
+  <div class='flex flex-wrap justify-between gap-8 mt-3 mb-8'>
+    {% for illustration in line %}
+      <div class='flex flex-col items-center'>
+         <div class='{% if title == "Errors" %} w-[608px] h-[608px] {% else %} w-[254px] h-[254px] {% endif %}'>
+          <img class='w-full h-full' src="/illustrations/{{ illustration }}.png" alt="{{ illustration }} illustration">
+        </div>
+        <div class='text-xs'>{{ illustration }}</div>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}

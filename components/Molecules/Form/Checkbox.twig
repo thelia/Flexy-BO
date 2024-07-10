@@ -1,0 +1,7 @@
+<label class="Checkbox {{ classes|default('') }} {{ error ? 'error'  : ''}}" for='{{ name }}'>
+	<input type="checkbox" name='{{ name }}' value='{{ value }}' {% if disabled %} disabled {% endif %} {% if checked %} checked {% endif %}>
+	<div class="flex items-center justify-center checkmark">
+		<span class="w-[16px] h-[16px] text-white">{{ source("/icons/check.svg") }}</span>
+	</div>
+	<span>{{ label }}</span>
+</label>

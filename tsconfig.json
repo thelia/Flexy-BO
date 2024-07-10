@@ -1,5 +1,5 @@
 {
-  "include": ["./components/**/*.ts"],
+  "include": ["./components/**/*.ts", "components/Molecules/Button/Button.stories.js"],
   "exclude": [],
   "compilerOptions": {
     "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
