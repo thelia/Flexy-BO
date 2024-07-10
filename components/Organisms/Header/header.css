@@ -11,6 +11,7 @@
 
     .SearchBar {
       width: 450px;
+      height: 54px;
     }
 
     &-user,
