@@ -1,0 +1,11 @@
+<button class='UserMenuButton UserMenuButton--{{ variant }} {% if active %}UserMenuButton--active{% endif %}'>
+  <span class='UserMenuButton-avatar'>
+    <img src='{{ avatar }}' alt='{{ name }}' />
+  </span>
+  <span class='font-semibold UserMenuButton-name paragraph-3'>
+    {{ name }}
+  </span>
+  <span class='UserMenuButton-icon'>
+    {{ source('/icons/chevron-down.svg') }}
+  </span>
+</button>

@@ -1,0 +1,33 @@
+<div class='SnackBar SnackBar--{{ variant }}'>
+	{% if close %}
+		<button class='SnackBar-close'>
+			{{ source('/icons/close.svg') }}
+		</button>
+	{% endif %}
+
+	{% if icon %}
+		<div class='SnackBar-icon'>
+			{{ source('/icons/' ~ variant ~ '.svg') }}
+		</div>
+	{% endif %}
+
+	{% if title %}
+		<div class='font-bold SnackBar-title paragraph-2'>
+			{{ title }}
+		</div>
+	{% endif %}
+	<div class='SnackBar-content paragraph-3'>{{ content }}</div>
+	{% if action or secondaryAction or link %}
+		<div class='SnackBar-actions'>
+			{% if action %}
+				<button class='Button Button--medium Button--primary'>{{ action }}</button>
+			{% endif %}
+			{% if secondaryAction %}
+				<button class='Button Button--medium Button--secondary'>{{ secondaryAction }}</button>
+			{% endif %}
+			{% if link %}
+				{% include '../../Molecules/Links/Link.twig' with { label: link.label, classes: '', href: link.href, target: '', iconLeft: 'arrow-left', iconRight: 'arrow-right', iconSize: 'h-5 w-5' } %}
+			{% endif %}
+		</div>
+	{% endif %}
+</div>
