@@ -1,0 +1,11 @@
+.Pagination {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  &-input {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
