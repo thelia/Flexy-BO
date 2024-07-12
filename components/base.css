@@ -4,6 +4,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
@@ -14,4 +15,23 @@ body {
 svg {
   width: 100%;
   height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: var(--grey-lighter);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: var(--grey-dark);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--grey-dark) var(--grey-lighter);
 }
