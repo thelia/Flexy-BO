@@ -1,0 +1,11 @@
+<div class="Pagination">
+	{% include "../../Molecules/Button/Button.twig" with { icon_left: "arrow-left", variant: "tertiary", classes: "Button--large" } %}
+
+	<div class="Pagination-input">
+		{% include '../../Molecules/Fields/FieldNumber/FieldNumber.twig' with { name: "page", max: totalPages, value: currentPage } %}
+		<span class='paragraph-3'>sur
+			{{ totalPages }}</span>
+	</div>
+
+	{% include "../../Molecules/Button/Button.twig" with { icon_left: "arrow-right", variant: "tertiary", classes: "Button--large" } %}
+</div>
