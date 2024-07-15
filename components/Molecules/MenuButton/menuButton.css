@@ -11,12 +11,14 @@
     margin-right: rem-convert(8px);
   }
 
-  &-plus {
+  &-plus,
+  &-minus {
     margin-left: auto;
   }
 
   &-icon,
-  &-plus {
+  &-plus,
+  &-minus {
     width: rem-convert(22px);
     height: rem-convert(22px);
   }

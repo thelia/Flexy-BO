@@ -14,8 +14,13 @@ export const sidebar = () => {
           b.classList.remove('MainMenuButton--selected');
           if (b.classList.contains('MainMenuButton--hasSubMenus')) {
             const bSubMenus = b.nextElementSibling;
-            if (bSubMenus)
+            if (bSubMenus) {
               bSubMenus.classList.remove('Sidebar-menu-item-submenu--open');
+              b.querySelector('.MainMenuButton-minus').classList.add('hidden');
+              b.querySelector('.MainMenuButton-plus').classList.remove(
+                'hidden'
+              );
+            }
           }
         }
       });
@@ -27,6 +32,14 @@ export const sidebar = () => {
           'Sidebar-menu-item-submenu--open',
           !isSelected
         );
+
+        button
+          .querySelector('.MainMenuButton-plus')
+          .classList.toggle('hidden', !isSelected);
+
+        button
+          .querySelector('.MainMenuButton-minus')
+          .classList.toggle('hidden', isSelected);
       }
     });
   });
