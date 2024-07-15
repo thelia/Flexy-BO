@@ -1,5 +1,5 @@
 {% set choiceCardClasses = 'ChoiceCard ChoiceCard--' ~ size %}
-{% if active %}
+{% if checked %}
 	{% set choiceCardClasses = choiceCardClasses ~ ' ChoiceCard--active' %}
 {% endif %}
 {% if disabled %}
@@ -7,7 +7,7 @@
 {% endif %}
 
 <div class="{{ choiceCardClasses }}">
-	{% include '../../Form/Radio.twig' with { label: text } %}
+	{% include '../../Form/Radio.twig' with { label: text, name: name, disabled: disabled, checked: checked, classes: "inChoiceCard" } %}
 
 	{% if description and size == "lg" %}
 		<p class="ChoiceCard-description paragraph-4">{{ description }}</p>

@@ -11,7 +11,8 @@ export const base = {
     size: 'sm',
     disabled: false,
     description: 'ici une courte description',
-    active: false
+    name: 'radio',
+    checked: false
   },
   argTypes: {
     size: {
@@ -26,9 +27,6 @@ export const base = {
     },
     description: {
       control: { type: 'text' }
-    },
-    active: {
-      control: { type: 'boolean' }
     }
   }
 };
