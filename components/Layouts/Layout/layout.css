@@ -1,0 +1,25 @@
+.Layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.Header {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.Sidebar {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.Footer {
+  grid-area: 3 / 2 / 4 / 4;
+}
+
+.Content {
+  grid-area: 2 / 2 / 3 / 4;
+  padding: 32px;
+  background: rgba(245, 245, 245, 1);
+}
