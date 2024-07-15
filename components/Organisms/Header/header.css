@@ -16,6 +16,17 @@
     background-color: var(--white);
     flex-direction: column;
 
+    &-back {
+      display: none;
+      margin-bottom: 48px;
+      margin-top: 11px;
+      width: max-content;
+
+      &--active {
+        display: inline-flex;
+      }
+    }
+
     &--open {
       display: flex;
       z-index: 1000;
@@ -35,13 +46,28 @@
       align-self: flex-end;
       width: 24px;
       height: 24px;
-      margin-bottom: 93px;
+
+      &--withoutBack {
+        margin-bottom: 93px;
+      }
     }
 
     &-items {
-      display: flex;
+      display: none;
       flex-direction: column;
       margin-top: 24px;
+
+      &.SidebarMenu--open {
+        display: flex;
+      }
+
+      &.ConfigMenu--open {
+        display: flex;
+      }
+
+      &.LangMenu--open {
+        display: flex;
+      }
     }
 
     &-menus {

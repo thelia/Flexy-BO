@@ -1,43 +1,19 @@
 <aside class='Header-sidebar'>
-	<button class='Header-sidebar-close'>
+	<button class='Header-sidebar-close Header-sidebar-close--withoutBack'>
 		{{ source('/icons/close.svg') }}
 	</button>
+
+	{% include '../../Molecules/Button/Button.twig' with { variant: 'tertiary', icon_left: "arrow-left", text: "Menu", classes: "Button--small Header-sidebar-back"  } %}
+
 	<div class='Header-sidebar-content'>
 		<span class='Header-sidebar-title h2'>
 			Menu
 		</span>
-		<ul class='Header-sidebar-items'>
-			<li class='Header-sidebar-item'>
-				{% include '../../Molecules/ChoiceCards/IconText/IconTextChoiceCard.twig' with { text: 'Dashboard', iconLeft: "dashboard", variant: "md" } %}
-			</li>
-			<li class='Header-sidebar-item'>
-				{% include '../../Molecules/ChoiceCards/IconText/IconTextChoiceCard.twig' with { text: 'Commandes', iconLeft: "orders", iconRight: "long-arrow-right", variant: "md" } %}
-			</li>
-			<li class='Header-sidebar-item'>
-				{% include '../../Molecules/ChoiceCards/IconText/IconTextChoiceCard.twig' with { text: 'Clients', iconLeft: "clients", variant: "md" } %}
-			</li>
-			<li class='Header-sidebar-item'>
-				{% include '../../Molecules/ChoiceCards/IconText/IconTextChoiceCard.twig' with { text: 'Catalogue', iconLeft: "catalog", variant: "md" } %}
-			</li>
-			<li class='Header-sidebar-item'>
-				{% include '../../Molecules/ChoiceCards/IconText/IconTextChoiceCard.twig' with { text: 'Pages', iconLeft: "pages", variant: "md" } %}
-			</li>
-			<li class='Header-sidebar-item'>
-				{% include '../../Molecules/ChoiceCards/IconText/IconTextChoiceCard.twig' with { text: 'Blocks', iconLeft: "blocks", variant: "md" } %}
-			</li>
-			<li class='Header-sidebar-item'>
-				{% include '../../Molecules/ChoiceCards/IconText/IconTextChoiceCard.twig' with { text: 'Design', iconLeft: "design", variant: "md" } %}
-			</li>
-			<li class='Header-sidebar-item'>
-				{% include '../../Molecules/ChoiceCards/IconText/IconTextChoiceCard.twig' with { text: 'Outils', iconLeft: "tools", variant: "md" } %}
-			</li>
-			<li class='Header-sidebar-item'>
-				{% include '../../Molecules/ChoiceCards/IconText/IconTextChoiceCard.twig' with { text: 'Modules', iconLeft: "modules", variant: "md" } %}
-			</li>
-			<li class='Header-sidebar-item'>
-				{% include '../../Molecules/ChoiceCards/IconText/IconTextChoiceCard.twig' with { text: 'Aide', iconLeft: "tooltip", variant: "md" } %}
-			</li>
-		</ul>
+
+		{% include './SidebarMenu.twig' %}
+		{% include './LangMenu.twig' %}
+		{% include './ConfigMenu.twig' %}
+
 		{% include '../../Molecules/SearchBar/SearchBar.twig' with { size: 'lg', classes: "my-8" } %}
 
 		<div class="Header-sidebar-menus">
