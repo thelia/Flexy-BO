@@ -1,10 +1,73 @@
 .Header {
+  position: relative;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
   background-color: var(--white);
   padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &-sidebar {
+    display: none;
+    position: fixed;
+    width: calc(max(390px, 100%));
+    padding: 16px;
+    padding-bottom: 32px;
+    background-color: var(--white);
+    flex-direction: column;
+
+    &--open {
+      display: flex;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+    }
+
+    &-content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &-close {
+      align-self: flex-end;
+      width: 24px;
+      height: 24px;
+      margin-bottom: 93px;
+    }
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
+    }
+
+    &-menus {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      &-lang,
+      &-config {
+        width: 100%;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 48px;
+
+      &-icon {
+        height: 20px;
+      }
+    }
+  }
 
   &-left {
     display: flex;
@@ -45,6 +108,10 @@
         position: absolute;
         display: none;
         top: 70px;
+
+        @media (max-width: 768px) {
+          top: 48px;
+        }
       }
 
       &:focus-within {
@@ -61,13 +128,47 @@
     display: none;
   }
 
+  &-searchbar-close {
+    display: none;
+    width: 22px;
+    height: 22px;
+  }
+
   @media (max-width: 1280px) {
+    .ButtonSearch {
+      display: inline-flex;
+    }
+
     .SearchBar {
       display: none;
     }
 
-    .ButtonSearch {
-      display: inline-flex;
+    &-searchbar--open {
+      @media (min-width: 768px) {
+        .Header-searchbar-close {
+          position: absolute;
+          right: 24px;
+          top: 32px;
+          display: block;
+        }
+
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        .SearchBar {
+          display: flex;
+          width: 500px;
+        }
+
+        .Header-left,
+        .ButtonSearch,
+        .Header-right-lang,
+        .Header-right-config,
+        .Header-right-user,
+        .Button {
+          display: none;
+        }
+      }
     }
 
     .UserMenuButton-name {
@@ -80,6 +181,10 @@
 
     &-left-menu {
       display: block;
+    }
+
+    .SearchBar {
+      display: none;
     }
 
     .Button {

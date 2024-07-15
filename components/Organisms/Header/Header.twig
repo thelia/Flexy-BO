@@ -1,8 +1,9 @@
+{% include './HeaderNav.twig' %}
 <nav class='Header'>
 	<div class='Header-left'>
-		<div class='Header-left-menu'>
+		<button class='Header-left-menu'>
 			{{ source('/icons/menu.svg') }}
-		</div>
+		</button>
 		<div class='Header-left-logo'>
 			{{ source('/images/placeholder-logo.svg') }}
 		</div>
@@ -12,6 +13,9 @@
 
 		{% include '../../Molecules/Button/Button.twig' with { variant: 'secondary', icon_left: "search", classes: "Button--large ButtonSearch"  } %}
 		{% include '../../Molecules/SearchBar/SearchBar.twig' with { size: 'lg' } %}
+		<button class='Header-searchbar-close'>
+			{{ source('/icons/close.svg') }}
+		</button>
 
 		<div class='Header-right-lang'>
 			{% include '../../Molecules/Button/Button.twig' with { variant: 'tertiary', text: 'FR', icon_left: "french", icon_right: "chevron-down", classes: "Button--large"  } %}
