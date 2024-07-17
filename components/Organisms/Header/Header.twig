@@ -1,0 +1,43 @@
+{% include './HeaderNav.twig' %}
+<nav class='Header'>
+	<div class='Header-left'>
+		<button class='Header-left-menu'>
+			{{ source('/icons/menu.svg') }}
+		</button>
+		<div class='Header-left-logo'>
+			{{ source('/images/placeholder-logo.svg') }}
+		</div>
+	</div>
+
+	<div class='Header-right'>
+
+		{% include '../../Molecules/Button/Button.twig' with { variant: 'secondary', icon_left: "search", classes: "Button--large ButtonSearch"  } %}
+		{% include '../../Molecules/SearchBar/SearchBar.twig' with { size: 'lg' } %}
+		<button class='Header-searchbar-close'>
+			{{ source('/icons/close.svg') }}
+		</button>
+
+		<div class='Header-right-lang'>
+			{% include '../../Molecules/Button/Button.twig' with { variant: 'tertiary', text: 'FR', icon_left: "french", icon_right: "chevron-down", classes: "Button--large"  } %}
+			<div class='Header-right-lang-menu'>
+				{% include '../../Molecules/NavElements/LanguageMenu.twig' %}
+			</div>
+		</div>
+
+		<div class='Header-right-config'>
+			{% include '../../Molecules/Button/Button.twig' with { variant: 'quartenary', icon_left: "config", classes: "Button--large"  } %}
+			<div class='Header-right-config-menu'>
+				{% include '../../Molecules/NavElements/ConfigMenu.twig' %}
+			</div>
+		</div>
+
+		<div class='Header-right-user'>
+			{% include '../../Molecules/UserMenuButton/UserMenuButton.twig' with { name: 'Bruce Wayne', avatar: 'https://via.placeholder.com/150', variant: 'lg' } %}
+			<div class='Header-right-user-menu'>
+				{% include '../../Molecules/NavElements/UserMenu.twig' %}
+			</div>
+		</div>
+
+		{% include '../../Molecules/Button/Button.twig' with { variant: 'primary', icon_left: "eye", classes: "Button--large"  } %}
+	</div>
+</nav>

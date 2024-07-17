@@ -1,15 +1,15 @@
-<button class='IconTextChoiceCard IconTextChoiceCard--{{ variant }} {% if not iconLeft and iconRight %}justify-between{% endif %}' {% if disabled %}disabled{% endif %}>
-  {% if iconLeft %}
-    <span class='IconTextChoiceCard-icon'>
-      {{ source('/icons/' ~ iconLeft ~ '.svg') }}
-    </span>
-  {% endif %}
-  {% if text %}
-    <span class='IconTextChoiceCard-text paragraph-3'>{{ text }}</span>
-  {% endif %}
-  {% if iconRight %}
-    <span class='IconTextChoiceCard-icon'>
-      {{ source('/icons/' ~ iconRight ~ '.svg') }}
-    </span>
-  {% endif %}
+<button class='IconTextChoiceCard IconTextChoiceCard--{{ variant }} {% if not iconLeft and iconRight %}justify-between{% endif %}' {% if disabled %} disabled {% endif %}>
+	{% if iconLeft %}
+		<span class='IconTextChoiceCard-icon IconTextChoiceCard-iconLeft'>
+			{{ source('/icons/' ~ iconLeft ~ '.svg') }}
+		</span>
+	{% endif %}
+	{% if text %}
+		<span class='IconTextChoiceCard-text paragraph-3'>{{ text }}</span>
+	{% endif %}
+	{% if iconRight %}
+		<span class='IconTextChoiceCard-icon IconTextChoiceCard-iconRight'>
+			{{ source('/icons/' ~ iconRight ~ '.svg') }}
+		</span>
+	{% endif %}
 </button>

@@ -6,14 +6,22 @@
   border-radius: 8px;
   background-color: var(--white);
   min-width: rem-convert(130px);
+  width: 100%;
   cursor: pointer;
+  outline-offset: -2px;
+
+  &-iconRight {
+    margin-left: auto;
+  }
 
   &--md {
     border-radius: 0px;
     border-bottom: 1px solid var(--grey-lighter);
+    padding-top: 25px;
+    padding-bottom: 25px;
 
     &:focus-visible {
-      border-bottom: 0px;
+      border-color: transparent;
     }
   }
 
