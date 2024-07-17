@@ -124,6 +124,17 @@
       height: 54px;
     }
 
+    &-lang .Button:focus-visible,
+    &-user .UserMenuButton:focus-visible,
+    &-lang:focus-within,
+    &-user:focus-within {
+      .icon-right,
+      .Button .icon-right,
+      .UserMenuButton-icon {
+        transform: rotate(180deg);
+      }
+    }
+
     &-user,
     &-config,
     &-lang {
