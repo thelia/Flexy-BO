@@ -1,3 +1,4 @@
+import { userMenuButton } from '../../Molecules/UserMenuButton/userMenuButton.js';
 import Header from './Header.twig';
 import { header } from './header.js';
 
@@ -7,5 +8,8 @@ export default {
 
 export const base = {
   render: (args) => Header(args),
-  play: () => header()
+  play: () => {
+    header();
+    userMenuButton();
+  }
 };
