@@ -1,0 +1,38 @@
+<aside class='Header-sidebar'>
+	<button class='Header-sidebar-close Header-sidebar-close--withoutBack'>
+		{{ source('/icons/close.svg') }}
+	</button>
+
+	{% include '../../Molecules/Button/Button.twig' with { variant: 'tertiary', icon_left: "arrow-left", text: "Menu", classes: "Button--small Header-sidebar-back"  } %}
+
+	<div class='Header-sidebar-content'>
+		<span class='Header-sidebar-title h2'>
+			Menu
+		</span>
+
+		{% include './SidebarMenu.twig' %}
+		{% include './LangMenu.twig' %}
+		{% include './ConfigMenu.twig' %}
+
+		{% include '../../Molecules/SearchBar/SearchBar.twig' with { size: 'lg', classes: "my-8" } %}
+
+		<div class="Header-sidebar-menus">
+			<div class="Header-sidebar-menus-lang">
+				{% include '../../Molecules/Button/Button.twig' with { variant: 'quartenary', icon_left: "french", text: "Langue", classes: "Button--xl"  } %}
+			</div>
+
+			<div class="Header-sidebar-menus-config">
+				{% include '../../Molecules/Button/Button.twig' with { variant: 'quartenary', icon_left: "config", text: "Configuration", classes: "Button--xl"  } %}
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class='Header-sidebar-footer'>
+		<div class='Header-sidebar-footer-icon'>
+			{{ source('/images/thelia-black.svg') }}
+		</div>
+		<span class="font-light text-white/50 paragraph-4">V2.5.0</span>
+	</div>
+</aside>

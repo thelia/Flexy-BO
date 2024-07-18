@@ -1,14 +1,13 @@
 {% set classes = "" %}
-{% set labelClasses = "bg-white text-black" %}
 {% if selected %}
-  {% set classes = classes ~ " SubMenuButton--selected" %}
-  {% set labelClasses = labelClasses ~ " group-hover:bg-grey-lighter" %}
+	{% set classes = classes ~ " SubMenuButton--selected" %}
+	{% set labelClasses = labelClasses ~ " group-hover:bg-grey-lighter" %}
 {% endif %}
 
 <a href="{{href}}" class="SubMenuButton group {{ classes }}">
-  <div class="SubMenuButton-label paragraph-4 font-semibold">{{label}}</div>
+	<div class="font-semibold SubMenuButton-label paragraph-4">{{label}}</div>
 
-  {% if count %}
-    {% include "../../Atoms/Labels/Label.twig" with { text: count, classes: labelClasses } %}
-  {% endif %}
+	{% if count %}
+		{% include "../../Atoms/Labels/Label.twig" with { text: count, classes: labelClasses } %}
+	{% endif %}
 </a>

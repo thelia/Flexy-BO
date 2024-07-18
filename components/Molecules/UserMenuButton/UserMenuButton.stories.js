@@ -1,4 +1,5 @@
 import UserMenuButton from './UserMenuButton.twig';
+import { userMenuButton } from './userMenuButton';
 
 export default {
   title: 'Design System/Molecules/UserMenuButton'
@@ -6,6 +7,7 @@ export default {
 
 export const base = {
   render: (args) => UserMenuButton(args),
+  play: () => userMenuButton(),
   args: {
     name: 'Bruce Wayne',
     avatar: 'https://via.placeholder.com/150',

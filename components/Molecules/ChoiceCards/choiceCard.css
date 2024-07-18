@@ -6,14 +6,22 @@
   border-radius: 8px;
   background-color: var(--white);
   min-width: rem-convert(130px);
+  width: 100%;
   cursor: pointer;
+  outline-offset: -2px;
+
+  &-iconRight {
+    margin-left: auto;
+  }
 
   &--md {
     border-radius: 0px;
     border-bottom: 1px solid var(--grey-lighter);
+    padding-top: 25px;
+    padding-bottom: 25px;
 
     &:focus-visible {
-      border-bottom: 0px;
+      border-color: transparent;
     }
   }
 
@@ -34,5 +42,51 @@
   &-icon {
     width: 22px;
     height: 22px;
+  }
+}
+
+.ChoiceCard {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px 16px 16px;
+  gap: 8px;
+  border-radius: 8px;
+  outline: 1px solid var(--grey);
+  width: max-content;
+
+  &-description {
+    margin-left: 25px;
+  }
+
+  &:hover {
+    background: var(--vermillon-lightest);
+    outline-color: var(--vermillon-medium);
+  }
+
+  &:focus-within {
+    outline: 2px solid var(--vermillon-medium);
+  }
+
+  &--active {
+    background: var(--vermillon-lighter);
+    outline-color: var(--vermillon-medium);
+
+    &:focus-within {
+      outline: 2px solid var(--vermillon);
+    }
+  }
+
+  &:disabled,
+  &[disabled],
+  &--disabled {
+    color: var(--grey-lighter);
+    outline-color: var(--grey-lighter);
+    background-color: var(--white);
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: var(--white);
+      outline-color: var(--grey-lighter);
+    }
   }
 }

@@ -1,10 +1,9 @@
 .MainMenuButton {
   display: flex;
   align-items: center;
-  background-color: var(--grey-dark);
+  background-color: var(--grey-darker);
   color: var(--white);
   padding: rem-convert(16px);
-  width: rem-convert(225px);
   border-radius: rem-convert(8px);
   text-decoration: none;
 
@@ -12,12 +11,14 @@
     margin-right: rem-convert(8px);
   }
 
-  &-plus {
+  &-plus,
+  &-minus {
     margin-left: auto;
   }
 
   &-icon,
-  &-plus {
+  &-plus,
+  &-minus {
     width: rem-convert(22px);
     height: rem-convert(22px);
   }
@@ -48,6 +49,7 @@
 .SubMenuButton {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--grey-dark);
   color: var(--white);
   padding-left: rem-convert(16px);

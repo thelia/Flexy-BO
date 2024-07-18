@@ -1,0 +1,15 @@
+{% set choiceCardClasses = 'ChoiceCard ChoiceCard--' ~ size %}
+{% if checked %}
+	{% set choiceCardClasses = choiceCardClasses ~ ' ChoiceCard--active' %}
+{% endif %}
+{% if disabled %}
+	{% set choiceCardClasses = choiceCardClasses ~ ' ChoiceCard--disabled' %}
+{% endif %}
+
+<div class="{{ choiceCardClasses }}">
+	{% include '../../Form/Checkbox.twig' with { label: text, name: name, disabled: disabled, checked: checked, classes: "inChoiceCard" } %}
+
+	{% if description and size == "lg" %}
+		<p class="ChoiceCard-description paragraph-4">{{ description }}</p>
+	{% endif %}
+</div>

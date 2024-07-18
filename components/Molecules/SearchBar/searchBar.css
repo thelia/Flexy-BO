@@ -36,7 +36,7 @@
 
   input {
     &::placeholder {
-      @apply text-grey-dark/75;
+      @apply text-grey-dark;
       font-weight: 300;
     }
 
