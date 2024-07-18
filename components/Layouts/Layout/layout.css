@@ -1,25 +1,55 @@
 .Layout {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-rows: 88px auto 48px;
+  grid-template-columns: 240px auto;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-rows: 56px auto auto;
+    grid-template-columns: auto;
+  }
 }
 
 .Header {
-  grid-area: 1 / 1 / 2 / 4;
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 3;
 }
 
 .Sidebar {
-  grid-area: 2 / 1 / 4 / 2;
+  grid-area: sidebar;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 2;
 }
 
 .Footer {
-  grid-area: 3 / 2 / 4 / 4;
+  grid-row-start: 3;
+  grid-column-start: 2;
+
+  grid-row-end: 4;
+  grid-column-end: 3;
+
+  @media (max-width: 768px) {
+    grid-column-start: 1;
+  }
 }
 
 .Content {
-  grid-area: 2 / 2 / 3 / 4;
+  grid-row-start: 2;
+  grid-column-start: 2;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+
   padding: 32px;
   background: rgba(245, 245, 245, 1);
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    grid-column-start: 1;
+  }
 }

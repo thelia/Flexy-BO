@@ -6,6 +6,10 @@
   padding: 16px;
   width: 240px;
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   &-menu {
     display: flex;
     flex-direction: column;
@@ -31,6 +35,10 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+
+    span {
+      color: rgba(255, 255, 255, 0.5);
+    }
 
     &-icon {
       height: 20px;
