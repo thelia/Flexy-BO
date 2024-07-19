@@ -13,7 +13,8 @@ export const classic = {
     customText: 'Button',
     variant: 'primary',
     icon_left: 'none',
-    icon_right: 'none'
+    icon_right: 'none',
+    data: {}
   },
   argTypes: {
     variant: {
@@ -30,6 +31,9 @@ export const classic = {
     },
     href: {
       control: { type: 'text' }
+    },
+    data: {
+      control: { type: 'object' }
     }
   }
 };

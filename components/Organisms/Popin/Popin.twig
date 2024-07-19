@@ -1,0 +1,49 @@
+<div class='Popin{% if open %} Popin--open{% endif %}' id="{{id}}">
+	<button class='Popin-close'>
+		{{ source('/icons/close.svg') }}
+	</button>
+
+	<div class='Popin-dragbar'></div>
+
+	{% if img %}
+		<div class='Popin-img'>
+			<img src='{{ img }}' alt='{{ alt }}'>
+		</div>
+	{% endif %}
+
+	<div class='Popin-content'>
+		{% if title %}
+			<h2 class='Popin-title h2'>
+				{{ title }}
+			</h2>
+		{% endif %}
+
+		{% if text %}
+			<div class='Popin-text paragraph-2'>
+				{{ text }}
+			</div>
+		{% endif %}
+
+		{% if checkbox.label %}
+			<div class='Popin-checkbox'>
+				{% include '../../Molecules/Form/Checkbox.twig' with { label: checkbox.label, name: checkbox.name } %}
+			</div>
+		{% endif %}
+	</div>
+
+	{% if action or secondaryAction or link %}
+		<div class='Popin-actions'>
+			{% if secondaryAction %}
+				{% include '../../Molecules/Button/Button.twig' with { text: secondaryAction, variant: 'secondary', classes: "Button--large"  } %}
+			{% endif %}
+			{% if link %}
+				{% include '../../Molecules/Links/Link.twig' with { label: link.label, classes: '', href: link.href, target: '', iconLeft: link.iconLeft, iconRight: link.iconRight, iconSize: 'h-5 w-5' } %}
+			{% endif %}
+			{% if action %}
+				{% include '../../Molecules/Button/Button.twig' with { text: action, variant: 'primary', classes: "Button--large"  } %}
+			{% endif %}
+		</div>
+	{% endif %}
+
+</div>
+<div class='Popin-overlay'></div>

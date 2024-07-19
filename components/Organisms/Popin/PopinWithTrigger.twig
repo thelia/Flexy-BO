@@ -1,0 +1,10 @@
+{% include '../../Molecules/Button/Button.twig' with { text: "open popin", variant: 'primary', classes: "Button--large popin-trigger", data: { 'key': "popin-id", 'value': "popin-with-trigger" }  } %}
+
+{% include '../../Organisms/Popin/Popin.twig' with { 
+  title: "Popin title", 
+  text: "Popin text", 
+  action: "Primary action", 
+  secondaryAction: "Secondary action", 
+  img: '/illustrations/sécurité.png',
+  id: "popin-with-trigger",
+} %}
