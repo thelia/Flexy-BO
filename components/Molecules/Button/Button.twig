@@ -1,16 +1,21 @@
 {% set classes = classes|default('') %}
-{% if variant %}{% set classes = classes ~ ' Button--' ~ variant %}{% endif %}
-{% set tag = 'button' %}
-{% if href %}{% set tag = 'a' %}{% endif %}
+{% if variant %}
+	{% set classes = classes ~ ' Button--' ~ variant %}
+{% endif %}
+{% set tag = href ? 'a' : 'button' %}
+{% set typeAttr = href ? '' : 'type=' ~ (type|default('button')) %}
 
-<{{ tag }} class='Button {{ classes }}' {% if disabled %}disabled{% endif %} {% if href %}href='{{ href }}'{% else %}type='{{ type|default('button') }}'{% endif %}>
-  {% if icon_left %}
-    <span class='icon icon-left'>{{ source("/icons/"~ icon_left ~".svg") }}</span>
-  {% endif %}
-  {% if text %}
-    <span>{{ text }}</span>
-  {% endif %}
-  {% if icon_right %}
-    <span class='icon icon-right'>{{ source("/icons/"~ icon_right ~".svg") }}</span>
-  {% endif %}
-</{{ tag }}>
+<{{tag}} class="Button {{ classes }}" {% if disabled %} disabled {% endif %} {% if href %} href="{{ href }}" {% endif %} {{ typeAttr }} {% if data is defined and data.key is defined and data.value is defined %} data-{{ data.key }}="{{ data.value }}" {% endif %}>
+	{% if icon %}
+		<span class="icon">{{ source('/icons/' ~ icon ~ '.svg') }}</span>
+	{% endif %}
+	{% if icon_left %}
+		<span class="icon icon-left">{{ source('/icons/' ~ icon_left ~ '.svg') }}</span>
+	{% endif %}
+	{% if text %}
+		<span>{{ text }}</span>
+	{% endif %}
+	{% if icon_right %}
+		<span class="icon icon-right">{{ source('/icons/' ~ icon_right ~ '.svg') }}</span>
+	{% endif %}
+</{{tag}}>
